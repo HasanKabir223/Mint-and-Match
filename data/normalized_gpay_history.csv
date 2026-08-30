@@ -1,0 +1,55 @@
+source,row_id,date,time,amount,transaction_id,raw_description
+gpay,gpay_0,2026-08-01,19:40,-750.59,808117155426,Paid to Hasan Bhai
+gpay,gpay_1,2026-08-02,12:27,150.99,617318938760,Received from Rohit Office
+gpay,gpay_2,2026-08-02,12:42,-150.86,273997741524,Paid to Priya
+gpay,gpay_3,2026-08-02,11:41,899.27,547055029070,Received from Sneha Di
+gpay,gpay_4,2026-08-02,16:20,-680.66,288559569253,Paid to Fatima
+gpay,gpay_5,2026-08-03,17:38,-299.94,643391824534,Paid to Fatima
+gpay,gpay_6,2026-08-03,09:59,-150.65,309737811619,Paid to Vikram Landlord
+gpay,gpay_7,2026-08-03,17:04,299.15,254785667210,Received from Arjun Gym
+gpay,gpay_8,2026-08-04,08:46,299.29,576415064723,Received from Arjun Gym
+gpay,gpay_9,2026-08-04,09:46,-1200.24,599127439409,Paid to Sneha Di
+gpay,gpay_10,2026-08-04,11:45,-249.27,808779044123,Paid to Fatima
+gpay,gpay_11,2026-08-05,12:10,-99.88,586260407870,Paid to Ayesha
+gpay,gpay_12,2026-08-05,14:08,-1500.58,240997998139,Paid to Arjun Gym
+gpay,gpay_13,2026-08-07,11:55,500.42,691929601508,Received from Rohit Office
+gpay,gpay_14,2026-08-07,10:29,-299.61,494936156580,Paid to Arjun Gym
+gpay,gpay_15,2026-08-09,14:08,-175.31,935316694200,Paid to Rohit Office
+gpay,gpay_16,2026-08-09,14:42,750.93,666461768998,Received from Sneha Di
+gpay,gpay_17,2026-08-11,15:16,-175.85,952493720587,Paid to Vikram Landlord
+gpay,gpay_18,2026-08-11,19:28,-175.98,345045852621,Paid to Arjun Gym
+gpay,gpay_19,2026-08-13,11:52,-320.22,904054194082,Paid to Ayesha
+gpay,gpay_20,2026-08-13,18:46,-2000.53,854474071330,Paid to Vikram Landlord
+gpay,gpay_21,2026-08-15,08:42,-175.3,800581361458,Paid to Vikram Landlord
+gpay,gpay_22,2026-08-15,11:12,-299.06,938967038374,Paid to Ayesha
+gpay,gpay_23,2026-08-16,13:49,-500.0,948226581356,Paid to Sneha Di
+gpay,gpay_24,2026-08-16,22:59,-500.0,650433461315,Paid to Fatima
+gpay,gpay_25,2026-08-16,19:35,-2000.14,908302588517,Paid to Arjun Gym
+gpay,gpay_26,2026-08-16,11:50,500.72,793625626938,Received from Fatima
+gpay,gpay_27,2026-08-16,22:22,-500.0,535187102686,Paid to Ayesha
+gpay,gpay_28,2026-08-16,14:26,750.09,650144771997,Received from Karan Bro
+gpay,gpay_29,2026-08-16,16:10,320.77,276519237216,Received from Arjun Gym
+gpay,gpay_30,2026-08-18,11:32,-899.03,848913461122,Paid to Priya
+gpay,gpay_31,2026-08-18,16:31,-60.4,670662212985,Paid to Sneha Di
+gpay,gpay_32,2026-08-18,22:44,-3200.01,671182253884,Paid to Priya
+gpay,gpay_33,2026-08-19,10:13,500.7,208028583755,Received from Ayesha
+gpay,gpay_34,2026-08-20,16:16,-99.07,822763619778,Paid to Sneha Di
+gpay,gpay_35,2026-08-20,11:28,750.72,814294294451,Received from Vikram Landlord
+gpay,gpay_36,2026-08-21,09:21,-320.45,682640166001,Paid to Sneha Di
+gpay,gpay_37,2026-08-21,18:47,-1200.24,226247967103,Paid to Arjun Gym
+gpay,gpay_38,2026-08-22,08:29,-680.32,529189919272,Paid to Priya
+gpay,gpay_39,2026-08-22,13:19,-220.82,442539766821,Paid to Netflix
+gpay,gpay_40,2026-08-23,20:59,-220.18,654757219856,Paid to Local Kirana Store
+gpay,gpay_41,2026-08-23,08:37,-2000.15,928236479796,Paid to Rohit Office
+gpay,gpay_42,2026-08-24,10:23,-299.87,754818085172,Paid to Rohit Office
+gpay,gpay_43,2026-08-24,16:58,45.06,266753220112,Received from Fatima
+gpay,gpay_44,2026-08-25,13:22,-1200.45,617045625552,Paid to Ayesha
+gpay,gpay_45,2026-08-25,17:16,299.38,313114812281,Received from Ayesha
+gpay,gpay_46,2026-08-25,15:01,320.92,793399334677,Received from Fatima
+gpay,gpay_47,2026-08-25,21:25,-500.41,461343158181,Paid to Divya Roomie
+gpay,gpay_48,2026-08-26,16:18,-2000.54,999050535267,Paid to Karan Bro
+gpay,gpay_49,2026-08-27,12:07,-175.1,528799513174,Paid to Arjun Gym
+gpay,gpay_50,2026-08-27,18:14,-45.58,881304820142,Paid to Priya
+gpay,gpay_51,2026-08-27,10:50,-1499.81,937884981282,Paid to Blinkit
+gpay,gpay_52,2026-08-28,09:38,-150.96,374079861243,Paid to Priya
+gpay,gpay_53,2026-08-28,08:00,-175.42,299002427407,Paid to Rohit Office
