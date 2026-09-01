@@ -1,0 +1,147 @@
+date,merchant,tier,reason,amount,transaction_id
+2026-08-01,Local Kirana Store,tier_1_exact_id,Matched via exact UPI reference ID,-208.26,476122730029
+2026-08-01,Divya Nair,tier_1_exact_id,Matched via exact UPI reference ID,150.82,703754948409
+2026-08-01,Vikram Oberoi,tier_1_exact_id,Matched via exact UPI reference ID,-2000.62,562428000186
+2026-08-02,MOHAMMED H,tier_2_amount_date,Matched via single candidate (date + amount),-2821.52,270712558963
+2026-08-02,DIVYA NAIR,tier_2_amount_date,Matched via single candidate (date + amount),-685.16,267473328883
+2026-08-02,Sanjay Iyer,tier_1_exact_id,Matched via exact UPI reference ID,-150.95,822026593455
+2026-08-02,Priya Ramesh Patel,tier_1_exact_id,Matched via exact UPI reference ID,45.14,518399561389
+2026-08-02,ACME CORP,tier_3_exception,NEFT salary credit of 45000.00 from ACME CORP on 2026-08-02 is a direct banking transfer with no UPI counterpart.,45000.0,
+2026-08-02,Blinkit,tier_1_exact_id,Matched via exact UPI reference ID,-595.59,356079182669
+2026-08-03,Sanjay Iyer,tier_1_exact_id,Matched via exact UPI reference ID,-89.05,516469066999
+2026-08-03,Manoj Kumar Yadav,tier_1_exact_id,Matched via exact UPI reference ID,45.55,690340809498
+2026-08-03,Neha Chopra,tier_1_exact_id,Matched via exact UPI reference ID,-750.6,936612415868
+2026-08-03,Arjun Singh Rathore,tier_1_exact_id,Matched via exact UPI reference ID,-99.91,497493333287
+2026-08-03,Deepika Reddy,tier_1_exact_id,Matched via exact UPI reference ID,320.79,813169162910
+2026-08-03,Sanjay Iyer,tier_1_exact_id,Matched via exact UPI reference ID,320.38,431388495671
+2026-08-03,ROHIT VERM,tier_2_amount_date,Matched via single candidate (date + amount),-1219.79,869579181433
+2026-08-03,Uber,tier_1_exact_id,Matched via exact UPI reference ID,-272.27,574412464460
+2026-08-03,Mohammed Hasan Kabir,tier_1_exact_id,Matched via exact UPI reference ID,299.99,374911678402
+2026-08-03,Ayesha Siddiqui,tier_1_exact_id,Matched via exact UPI reference ID,2000.5,528884645551
+2026-08-04,Priya Ramesh Patel,tier_1_exact_id,Matched via exact UPI reference ID,-899.48,715300826019
+2026-08-04,DIVYA NAIR,tier_2_amount_date,Matched via single candidate (date + amount),-3460.09,747269286719
+2026-08-04,Divya Nair,tier_1_exact_id,Matched via exact UPI reference ID,-500.34,716370370940
+2026-08-04,Arjun Singh Rathore,tier_1_exact_id,Matched via exact UPI reference ID,60.83,378186428250
+2026-08-04,AYESHA SID,tier_2_amount_date,Matched via single candidate (date + amount),-3264.0,290183703839
+2026-08-05,Divya Nair,tier_1_exact_id,Matched via exact UPI reference ID,-150.38,597873400285
+2026-08-05,Electricity Board BESCOM,tier_1_exact_id,Matched via exact UPI reference ID,-1129.13,408642127159
+2026-08-06,Mohammed Hasan Kabir,tier_1_exact_id,Matched via exact UPI reference ID,-320.05,574134293241
+2026-08-06,Blinkit REFUND,tier_1_exact_id,Matched via exact UPI reference ID,353.12,423527993212
+2026-08-06,Sneha Kulkarni,tier_1_exact_id,Matched via exact UPI reference ID,750.53,888534764524
+2026-08-06,Rohit Verma,tier_1_exact_id,Matched via exact UPI reference ID,-89.02,579119006758
+2026-08-07,Manoj Kumar Yadav,tier_1_exact_id,Matched via exact UPI reference ID,1200.45,864399322660
+2026-08-07,Spotify,tier_1_exact_id,Matched via exact UPI reference ID,-944.4,285599444448
+2026-08-07,Mohammed Hasan Kabir,tier_1_exact_id,Matched via exact UPI reference ID,150.72,549423999861
+2026-08-07,,tier_3_exception,Bank interest credit of 590.00 on 2026-08-07 is an internal bank entry without a payment app counterpart.,-590.0,
+2026-08-08,BigBasket,tier_1_exact_id,Matched via exact UPI reference ID,-427.38,319327536739
+2026-08-08,Arjun Singh Rathore,tier_1_exact_id,Matched via exact UPI reference ID,-750.82,298805510187
+2026-08-09,Neha Chopra,tier_1_exact_id,Matched via exact UPI reference ID,-4500.27,285079946846
+2026-08-09,Manoj Kumar Yadav,tier_3_exception,Found 3 GPay transactions with identical amount -500.00 on 2026-08-09; unable to disambiguate because bank statement lacks time timestamps.,-500.0,386850246100
+2026-08-09,Sanjay Iyer,tier_1_exact_id,Matched via exact UPI reference ID,150.69,942911269292
+2026-08-09,Ayesha Siddiqui,tier_1_exact_id,Matched via exact UPI reference ID,750.36,201914802140
+2026-08-09,Electricity Board BESCOM REFUND,tier_1_exact_id,Matched via exact UPI reference ID,449.82,270121087425
+2026-08-09,Imran Ali Khan,tier_1_exact_id,Matched via exact UPI reference ID,899.56,754470593937
+2026-08-09,Karan Malhotra,tier_3_exception,Found 3 GPay transactions with identical amount -500.00 on 2026-08-09; unable to disambiguate because bank statement lacks time timestamps.,-500.0,704077664685
+2026-08-09,Vikram Oberoi,tier_3_exception,Found 3 GPay transactions with identical amount -500.00 on 2026-08-09; unable to disambiguate because bank statement lacks time timestamps.,-500.0,904986655669
+2026-08-10,Spotify REFUND,tier_1_exact_id,Matched via exact UPI reference ID,511.13,764239461355
+2026-08-10,Practo,tier_1_exact_id,Matched via exact UPI reference ID,-1859.66,480451794684
+2026-08-10,Blinkit,tier_1_exact_id,Matched via exact UPI reference ID,-2345.17,823970258506
+2026-08-10,Vikram Oberoi,tier_1_exact_id,Matched via exact UPI reference ID,150.59,456107482013
+2026-08-10,Deepika Reddy,tier_1_exact_id,Matched via exact UPI reference ID,500.34,439177029563
+2026-08-11,Priya Ramesh Patel,tier_1_exact_id,Matched via exact UPI reference ID,-45.65,367279807972
+2026-08-11,Blinkit,tier_1_exact_id,Matched via exact UPI reference ID,-694.84,610935254212
+2026-08-12,Swiggy,tier_1_exact_id,Matched via exact UPI reference ID,-2108.41,545212747285
+2026-08-13,Divya Nair,tier_1_exact_id,Matched via exact UPI reference ID,-275.51,789052050014
+2026-08-13,Karan Malhotra,tier_3_exception,Found 5 GPay transactions with identical amount -250.00 on 2026-08-13; unable to disambiguate because bank statement lacks time timestamps.,-250.0,531560057967
+2026-08-13,Manoj Kumar Yadav,tier_3_exception,Found 5 GPay transactions with identical amount -250.00 on 2026-08-13; unable to disambiguate because bank statement lacks time timestamps.,-250.0,545670721108
+2026-08-13,Karan Malhotra,tier_3_exception,Found 5 GPay transactions with identical amount -250.00 on 2026-08-13; unable to disambiguate because bank statement lacks time timestamps.,-250.0,881664182120
+2026-08-13,Karan Malhotra,tier_3_exception,Found 5 GPay transactions with identical amount -250.00 on 2026-08-13; unable to disambiguate because bank statement lacks time timestamps.,-250.0,399599822755
+2026-08-13,Netflix,tier_1_exact_id,Matched via exact UPI reference ID,-1107.43,910386547652
+2026-08-13,Karan Malhotra,tier_3_exception,Found 5 GPay transactions with identical amount -250.00 on 2026-08-13; unable to disambiguate because bank statement lacks time timestamps.,-250.0,334686771360
+2026-08-13,Zomato,tier_1_exact_id,Matched via exact UPI reference ID,-2377.35,371905354805
+2026-08-13,Karan Malhotra,tier_1_exact_id,Matched via exact UPI reference ID,-150.48,631210330628
+2026-08-14,Arjun Singh Rathore,tier_1_exact_id,Matched via exact UPI reference ID,-320.57,606022976513
+2026-08-14,ROHIT VERM,tier_2_amount_date,Matched via single candidate (date + amount),-3457.99,315463644326
+2026-08-14,Sanjay Iyer,tier_1_exact_id,Matched via exact UPI reference ID,750.94,281154632032
+2026-08-14,VIKRAM OBE,tier_2_amount_date,Matched via single candidate (date + amount),-166.83,913242597367
+2026-08-14,Neha Chopra,tier_1_exact_id,Matched via exact UPI reference ID,1200.09,899174012831
+2026-08-14,SNEHA KULK,tier_2_amount_date,Matched via single candidate (date + amount),-3124.86,880584485277
+2026-08-14,Sneha Kulkarni,tier_1_exact_id,Matched via exact UPI reference ID,-60.88,595078867786
+2026-08-14,Blinkit REFUND,tier_1_exact_id,Matched via exact UPI reference ID,890.4,609171509327
+2026-08-15,Priya Ramesh Patel,tier_1_exact_id,Matched via exact UPI reference ID,60.24,278666534228
+2026-08-15,Airtel Posptaid,tier_1_exact_id,Matched via exact UPI reference ID,-2228.76,488713898465
+2026-08-15,Manoj Kumar Yadav,tier_1_exact_id,Matched via exact UPI reference ID,-89.12,713102123210
+2026-08-15,ROHIT VERM,tier_2_amount_date,Matched via single candidate (date + amount),-59.9,316691087223
+2026-08-15,Spotify,tier_1_exact_id,Matched via exact UPI reference ID,-1620.74,204734481719
+2026-08-16,Arjun Singh Rathore,tier_1_exact_id,Matched via exact UPI reference ID,1750.62,509879584664
+2026-08-16,MANOJ KUMA,tier_2_amount_date,Matched via single candidate (date + amount),-2774.81,624241221538
+2026-08-16,Myntra,tier_1_exact_id,Matched via exact UPI reference ID,-1078.46,942534770374
+2026-08-16,Rohit Verma,tier_1_exact_id,Matched via exact UPI reference ID,-4500.09,274973831018
+2026-08-16,Local Kirana Store,tier_1_exact_id,Matched via exact UPI reference ID,-1809.63,964650626009
+2026-08-16,Ola,tier_1_exact_id,Matched via exact UPI reference ID,-407.78,262986959215
+2026-08-16,Blinkit REFUND,tier_1_exact_id,Matched via exact UPI reference ID,217.2,879400024910
+2026-08-16,Sneha Kulkarni,tier_1_exact_id,Matched via exact UPI reference ID,299.52,963769118139
+2026-08-16,Electricity Board BESCOM,tier_1_exact_id,Matched via exact UPI reference ID,-342.49,936833086088
+2026-08-16,Neha Chopra,tier_1_exact_id,Matched via exact UPI reference ID,-899.8,201132981883
+2026-08-16,Local Kirana Store,tier_1_exact_id,Matched via exact UPI reference ID,-357.52,832552116141
+2026-08-17,Spotify REFUND,tier_1_exact_id,Matched via exact UPI reference ID,728.6,456921089803
+2026-08-17,Mohammed Hasan Kabir,tier_3_exception,Found 4 GPay transactions with identical amount -250.00 on 2026-08-17; unable to disambiguate because bank statement lacks time timestamps.,-250.0,656800617183
+2026-08-17,Manoj Kumar Yadav,tier_1_exact_id,Matched via exact UPI reference ID,89.34,382184450280
+2026-08-17,Neha Chopra,tier_3_exception,Found 4 GPay transactions with identical amount -250.00 on 2026-08-17; unable to disambiguate because bank statement lacks time timestamps.,-250.0,647841251628
+2026-08-17,Sneha Kulkarni,tier_3_exception,Found 4 GPay transactions with identical amount -250.00 on 2026-08-17; unable to disambiguate because bank statement lacks time timestamps.,-250.0,425077647096
+2026-08-17,Arjun Singh Rathore,tier_3_exception,Found 4 GPay transactions with identical amount -250.00 on 2026-08-17; unable to disambiguate because bank statement lacks time timestamps.,-250.0,786860817810
+2026-08-17,Deepika Reddy,tier_1_exact_id,Matched via exact UPI reference ID,-750.54,559001014029
+2026-08-17,Sanjay Iyer,tier_1_exact_id,Matched via exact UPI reference ID,275.45,468327053776
+2026-08-17,Airtel Postpaid,tier_1_exact_id,Matched via exact UPI reference ID,-964.08,407513927802
+2026-08-17,Deepika Reddy,tier_1_exact_id,Matched via exact UPI reference ID,-4500.19,677339447176
+2026-08-17,Divya Nair,tier_1_exact_id,Matched via exact UPI reference ID,500.69,765244057280
+2026-08-17,BigBasket,tier_1_exact_id,Matched via exact UPI reference ID,-120.77,802303742741
+2026-08-18,Local Kirana Store,tier_1_exact_id,Matched via exact UPI reference ID,-2491.36,694866240317
+2026-08-18,AYESHA SID,tier_2_amount_date,Matched via single candidate (date + amount),-715.94,693575521732
+2026-08-18,Sanjay Iyer,tier_1_exact_id,Matched via exact UPI reference ID,89.53,229696030019
+2026-08-18,Zmoato,tier_1_exact_id,Matched via exact UPI reference ID,-1966.41,246286268218
+2026-08-18,Swiggy,tier_1_exact_id,Matched via exact UPI reference ID,-170.27,991147732615
+2026-08-18,Vikram Oberoi,tier_1_exact_id,Matched via exact UPI reference ID,-60.52,556747522506
+2026-08-19,BATCH4471,tier_3_exception,NEFT salary credit of 1505.14 from BATCH4471 on 2026-08-19 is a direct banking transfer with no UPI counterpart.,1505.14,
+2026-08-19,Vikram Oberoi,tier_1_exact_id,Matched via exact UPI reference ID,-500.37,902532973417
+2026-08-20,Rohit Verma,tier_1_exact_id,Matched via exact UPI reference ID,-99.22,741668801912
+2026-08-20,Priya Ramesh Patel,tier_1_exact_id,Matched via exact UPI reference ID,-2000.28,895012539902
+2026-08-21,Airtel Potspaid,tier_1_exact_id,Matched via exact UPI reference ID,-323.84,966382928490
+2026-08-21,Sanjay Iyer,tier_1_exact_id,Matched via exact UPI reference ID,-1750.39,511151657840
+2026-08-21,IMRAN ALI,tier_2_amount_date,Matched via single candidate (date + amount),-2850.79,472347320078
+2026-08-21,Arjun Singh Rathore,tier_1_exact_id,Matched via exact UPI reference ID,750.62,963401305211
+2026-08-22,Arjun Singh Rathore,tier_1_exact_id,Matched via exact UPI reference ID,899.83,213887072746
+2026-08-22,Manoj Kumar Yadav,tier_1_exact_id,Matched via exact UPI reference ID,-45.83,770819608136
+2026-08-23,AYESHA SID,tier_2_amount_date,Matched via single candidate (date + amount),-2145.03,366527948265
+2026-08-23,Ola,tier_1_exact_id,Matched via exact UPI reference ID,-1249.56,723145267115
+2026-08-23,Sneha Kulkarni,tier_1_exact_id,Matched via exact UPI reference ID,-275.56,487452752158
+2026-08-24,Swiggy,tier_1_exact_id,Matched via exact UPI reference ID,-551.99,757680671595
+2026-08-24,ROHIT VERM,tier_2_amount_date,Matched via single candidate (date + amount),-1141.87,958992171172
+2026-08-24,Electricity Board BESCOM,tier_1_exact_id,Matched via exact UPI reference ID,-1063.43,654710831171
+2026-08-24,ATM (NATIONAL),tier_3_exception,ATM cash withdrawal of 3000.00 on 2026-08-24 has no counterparty in UPI/payment history.,-3000.0,
+2026-08-25,Ayesha Siddiqui,tier_1_exact_id,Matched via exact UPI reference ID,-320.92,712450360047
+2026-08-25,PRIYA RAME,tier_2_amount_date,Matched via single candidate (date + amount),-3315.38,899244978216
+2026-08-25,Rohit Verma,tier_1_exact_id,Matched via exact UPI reference ID,60.37,907450348014
+2026-08-26,SNEHA KULK,tier_2_amount_date,Matched via single candidate (date + amount),-322.6,856194761246
+2026-08-26,Zomato,tier_1_exact_id,Matched via exact UPI reference ID,-1366.35,202581536923
+2026-08-26,Ayesha Siddiqui,tier_1_exact_id,Matched via exact UPI reference ID,-500.52,452558362365
+2026-08-26,Manoj Kumar Yadav,tier_1_exact_id,Matched via exact UPI reference ID,-4500.66,292956548863
+2026-08-27,,tier_3_exception,Bank interest credit of 42.50 on 2026-08-27 is an internal bank entry without a payment app counterpart.,42.5,
+2026-08-27,Manoj Kumar Yadav,tier_1_exact_id,Matched via exact UPI reference ID,150.63,213442468479
+2026-08-27,Vikram Oberoi,tier_1_exact_id,Matched via exact UPI reference ID,-275.35,923591853229
+2026-08-27,NEHA CHOPR,tier_2_amount_date,Matched via single candidate (date + amount),-352.77,675899282440
+2026-08-28,Zomato,tier_1_exact_id,Matched via exact UPI reference ID,-2284.08,733805200078
+2026-08-28,Divya Nair,tier_1_exact_id,Matched via exact UPI reference ID,750.86,273969679083
+2026-08-28,Swiggy,tier_1_exact_id,Matched via exact UPI reference ID,-175.51,505149987929
+2026-08-28,Arjun Singh Rathore,tier_1_exact_id,Matched via exact UPI reference ID,-99.78,866506373277
+2026-08-29,Ayesha Siddiqui,tier_1_exact_id,Matched via exact UPI reference ID,-1200.18,437552699486
+2026-08-29,,tier_3_exception,No corresponding GPay transaction of amount -5000.00 was found on date 2026-08-29.,-5000.0,
+2026-08-29,SNEHA KULK,tier_2_amount_date,Matched via single candidate (date + amount),-3376.74,814711646340
+2026-08-29,Cheque Clearing,tier_3_exception,Cheque clearing deposit of 5000.00 on 2026-08-29 is a direct bank operation with no UPI record.,5000.0,
+2026-08-30,Mohammed Hasan Kabir,tier_1_exact_id,Matched via exact UPI reference ID,-4500.81,824936515094
+2026-08-30,Karan Malhotra,tier_1_exact_id,Matched via exact UPI reference ID,-99.09,434107653877
+2026-08-30,NEHA CHOPR,tier_2_amount_date,Matched via single candidate (date + amount),-1125.8,236368133067
+2026-08-30,Vikram Oberoi,tier_1_exact_id,Matched via exact UPI reference ID,89.22,591559464006
+2026-08-30,Neha Chopra,tier_1_exact_id,Matched via exact UPI reference ID,320.09,282509366016
+2026-08-30,MANOJ KUMA,tier_2_amount_date,Matched via single candidate (date + amount),-80.03,399701121294
+2026-08-30,Neha Chopra,tier_1_exact_id,Matched via exact UPI reference ID,-299.04,884050248914

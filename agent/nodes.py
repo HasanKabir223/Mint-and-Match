@@ -157,13 +157,19 @@ def _generate_fallback_reason(bank_rec: Dict[str, Any], candidates: List[Dict[st
     desc = bank_rec.get("raw_description", "")
     date = bank_rec.get("date", "")
     amount = bank_rec.get("amount", 0.0)
+    merchant = bank_rec.get("merchant", "")
+    category = bank_rec.get("category", "")
     count = len(candidates)
 
     if count == 0:
+        if "SALARY" in desc.upper() or "NEFT" in desc.upper() or category == "Salary":
+            target = f" from {merchant}" if merchant else ""
+            return f"NEFT salary credit of {abs(amount):.2f}{target} on {date} is a direct banking transfer with no UPI counterpart."
         if "ATM" in desc.upper():
             return f"ATM cash withdrawal of {abs(amount):.2f} on {date} has no counterparty in UPI/payment history."
         if "POS" in desc.upper():
-            return f"Point-of-sale card transaction of {abs(amount):.2f} on {date} does not correspond to any GPay UPI record."
+            target = f" at {merchant}" if merchant else ""
+            return f"Point-of-sale card transaction of {abs(amount):.2f}{target} on {date} does not correspond to any GPay UPI record."
         if "CHQ" in desc.upper() or "CHEQUE" in desc.upper():
             return f"Cheque clearing deposit of {abs(amount):.2f} on {date} is a direct bank operation with no UPI record."
         if "INT" in desc.upper() or "INTEREST" in desc.upper():
@@ -175,8 +181,8 @@ def _generate_fallback_reason(bank_rec: Dict[str, Any], candidates: List[Dict[st
 
 def generate_exception_reason(state: ReconciliationState) -> Dict[str, Any]:
     """
-    Tier 3 Reasoner: Calls Groq LLM to generate an honest, specific one-sentence
-    explanation for every unresolved transaction.
+    Tier 3 Reasoner: Calls Groq LLM (llama-3.3-70b-versatile) to generate an honest,
+    specific one-sentence explanation for every unresolved transaction.
     """
     unresolved_records = state.get("unresolved_records", [])
     exceptions: List[Dict[str, Any]] = []
@@ -194,7 +200,7 @@ def generate_exception_reason(state: ReconciliationState) -> Dict[str, Any]:
         except Exception:
             groq_client = None
 
-    # Preferred model: llama-3.3-70b-versatile or llama3-70b-8192 or user configured
+    # Preferred model: llama-3.3-70b-versatile or user configured
     model_name = os.environ.get("GROQ_MODEL", "llama-3.3-70b-versatile")
 
     system_prompt = (
@@ -204,7 +210,7 @@ def generate_exception_reason(state: ReconciliationState) -> Dict[str, Any]:
         "Strict Guidelines:\n"
         "1. Never guess or hallucinate identities/facts not present in the record.\n"
         "2. If candidate count is 0: Explain that no matching transaction exists in the payment app on that date/amount. "
-        "Reference if it is an ATM withdrawal, POS retail card payment, cheque deposit, interest credit, or bank charge.\n"
+        "Reference if it is an NEFT salary credit, ATM withdrawal, POS retail card payment, cheque deposit, interest credit, or bank charge.\n"
         "3. If candidate count is 2 or more: Explain that multiple transactions have the exact same amount and date, "
         "and resolution is impossible specifically because the bank statement lacks time timestamps to disambiguate them.\n"
         "4. Output ONLY the single sentence explanation without quotes or preamble."
@@ -223,12 +229,17 @@ def generate_exception_reason(state: ReconciliationState) -> Dict[str, Any]:
                 f"- Date: {bank_rec.get('date')}\n"
                 f"- Amount: {bank_rec.get('amount')}\n"
                 f"- Description: {bank_rec.get('raw_description')}\n"
+                f"- Merchant: {bank_rec.get('merchant', 'N/A')}\n"
+                f"- Category: {bank_rec.get('category', 'N/A')}\n"
                 f"- Time: None (bank does not record timestamps)\n\n"
                 f"Matching Candidates Found in GPay: {count}\n"
             )
             if count > 0:
                 for idx, c in enumerate(candidates, 1):
-                    user_prompt += f"  Candidate {idx}: Time={c.get('time')}, Amount={c.get('amount')}, Desc='{c.get('raw_description')}', TxnID={c.get('transaction_id')}\n"
+                    user_prompt += (
+                        f"  Candidate {idx}: Time={c.get('time')}, Amount={c.get('amount')}, "
+                        f"Desc='{c.get('raw_description')}', Merchant='{c.get('merchant')}', TxnID={c.get('transaction_id')}\n"
+                    )
 
             try:
                 # Primary model attempt
@@ -243,7 +254,7 @@ def generate_exception_reason(state: ReconciliationState) -> Dict[str, Any]:
                 )
                 reason = response.choices[0].message.content.strip()
             except Exception as e:
-                # Fallback to llama3-8b-8192 or deterministic if model unavailable
+                # Fallback to llama-3.1-8b-instant or deterministic if model unavailable
                 try:
                     fallback_response = groq_client.chat.completions.create(
                         model="llama-3.1-8b-instant",

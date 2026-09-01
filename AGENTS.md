@@ -6,7 +6,7 @@ This file governs how AI coding agents (Antigravity) operate on this repository.
 
 ## 0. Source of Truth
 
-`Mint&Match_PRD.md` is the authoritative specification. If anything in your plan or code contradicts it, the PRD wins — stop and reconcile the conflict explicitly rather than silently picking one.
+`docs/Mint&Match_PRD.md` is the authoritative specification. If anything in your plan or code contradicts it, the PRD wins — stop and reconcile the conflict explicitly rather than silently picking one.
 
 ---
 
@@ -41,7 +41,7 @@ For any non-trivial task (new module, new graph node, new script, schema change)
 
 - **Normalization is deterministic** and runs before the agent graph (it is NOT a LangGraph node).
 - **Tier 1 (Exact ID) and Tier 2 (Fuzzy, single candidate) matching are deterministic rule logic.** No ML, no LLM calls.
-- **The LLM (Groq, `openai/gpt-oss-120b`) is used ONLY for Tier 3 exception-reason generation.** Do not route matching decisions through the LLM. Do not use tool-calling/function-calling for matching tiers.
+- **The LLM (Groq, `llama-3.3-70b-versatile`) is used ONLY for Tier 3 exception-reason generation.** Do not route matching decisions through the LLM. Do not use tool-calling/function-calling for matching tiers.
 - **Agent orchestration is LangGraph**, structured as the node graph defined in PRD Section 5. Do not collapse it into a single monolithic function or introduce competing frameworks.
 
 ---
@@ -66,3 +66,26 @@ For any non-trivial task (new module, new graph node, new script, schema change)
 - Do not report a match as confirmed unless it strictly meets Tier 1/2 criteria. Never force low-confidence matches to inflate accuracy metrics.
 - Generate honest, specific exception reasons reflecting actual record data and structural limitations (e.g. absence of bank time data).
 - Suspiciously perfect results (e.g., 100% match rate) must be treated as a signal to double check logic.
+
+---
+
+## 7. Summary checklist before any implementation
+
+- [ ] Have I stated the plan and gotten explicit approval?
+- [ ] Does this stay within the PRD's scope (and out of its non-goals)?
+- [ ] Does this respect the deterministic-matching / LLM-only-for-exceptions boundary?
+- [ ] Have I flagged assumptions instead of silently making them?
+- [ ] Am I building only what was asked, not what seemed like a nice addition?
+
+---
+
+## 8. Backend Development: Mentorship & User-Authored Code (FastAPI)
+
+For all backend / FastAPI development in this repository:
+- **Default Mode is Mentorship / Pair Guide**: The user writes the code. The agent provides conceptual explanations, endpoint blueprints, step-by-step milestones/assignments, and debug hints.
+- **Do Not Generate Code Unprompted**: The agent must NOT write or overwrite backend implementation files unless the user explicitly asks with phrases like *"write this for me"*, *"generate this code"*, or *"implement this file"*.
+- **Role of the Agent**:
+  1. Break down backend requirements into manageable learning assignments.
+  2. Explain FastAPI concepts (routers, Pydantic request/response schemas, file uploads, dependency injection, async execution, CORS).
+  3. Review the user's code for bugs, edge cases, and compliance with the PRD reconciliation engine.
+  4. Help troubleshoot exceptions, server issues, or test failures.

@@ -1,0 +1,147 @@
+source,row_id,date,time,amount,transaction_id,merchant,category,currency,payment_method,raw_description
+bank,bank_0,2026-08-01,,-208.26,476122730029,Local Kirana Store,Groceries,INR,,UPI/476122730029/Local Kirana Store/Payment
+bank,bank_1,2026-08-01,,150.82,703754948409,Divya Nair,Shopping,INR,,UPI/703754948409/Divya Nair/Payment
+bank,bank_2,2026-08-01,,-2000.62,562428000186,Vikram Oberoi,Personal Transfer,INR,,UPI/562428000186/Vikram Oberoi/Payment
+bank,bank_3,2026-08-02,,-2821.52,,MOHAMMED H,Food,INR,,POS/MOHAMMED H/RETAIL
+bank,bank_4,2026-08-02,,-685.16,,DIVYA NAIR,Transport,INR,,POS/DIVYA NAIR/RETAIL
+bank,bank_5,2026-08-02,,-150.95,822026593455,Sanjay Iyer,Rent Split,INR,,UPI/822026593455/Sanjay Iyer/Payment
+bank,bank_6,2026-08-02,,45.14,518399561389,Priya Ramesh Patel,Rent Split,INR,,UPI/518399561389/Priya Ramesh Patel/Payment
+bank,bank_7,2026-08-02,,45000.0,,ACME CORP,Salary,INR,,NEFT CR/SALARY/ACME CORP
+bank,bank_8,2026-08-02,,-595.59,356079182669,Blinkit,Groceries,INR,,UPI/356079182669/Blinkit/Payment
+bank,bank_9,2026-08-03,,-89.05,516469066999,Sanjay Iyer,Bill Payment,INR,,UPI/516469066999/Sanjay Iyer/Payment
+bank,bank_10,2026-08-03,,45.55,690340809498,Manoj Kumar Yadav,Bill Payment,INR,,UPI/690340809498/Manoj Kumar Yadav/Payment
+bank,bank_11,2026-08-03,,-750.6,936612415868,Neha Chopra,Shopping,INR,,UPI/936612415868/Neha Chopra/Payment
+bank,bank_12,2026-08-03,,-99.91,497493333287,Arjun Singh Rathore,Shopping,INR,,UPI/497493333287/Arjun Singh Rathore/Payment
+bank,bank_13,2026-08-03,,320.79,813169162910,Deepika Reddy,Shopping,INR,,UPI/813169162910/Deepika Reddy/Payment
+bank,bank_14,2026-08-03,,320.38,431388495671,Sanjay Iyer,Shopping,INR,,UPI/431388495671/Sanjay Iyer/Payment
+bank,bank_15,2026-08-03,,-1219.79,,ROHIT VERM,Food,INR,,POS/ROHIT VERM/RETAIL
+bank,bank_16,2026-08-03,,-272.27,574412464460,Uber,Transport,INR,,UPI/574412464460/Uber/Payment
+bank,bank_17,2026-08-03,,299.99,374911678402,Mohammed Hasan Kabir,Bill Payment,INR,,UPI/374911678402/Mohammed Hasan Kabir/Payment
+bank,bank_18,2026-08-03,,2000.5,528884645551,Ayesha Siddiqui,Food,INR,,UPI/528884645551/Ayesha Siddiqui/Payment
+bank,bank_19,2026-08-04,,-899.48,715300826019,Priya Ramesh Patel,Bill Payment,INR,,UPI/715300826019/Priya Ramesh Patel/Payment
+bank,bank_20,2026-08-04,,-3460.09,,DIVYA NAIR,Shopping,INR,,POS/DIVYA NAIR/RETAIL
+bank,bank_21,2026-08-04,,-500.34,716370370940,Divya Nair,Rent Split,INR,,UPI/716370370940/Divya Nair/Payment
+bank,bank_22,2026-08-04,,60.83,378186428250,Arjun Singh Rathore,Food,INR,,UPI/378186428250/Arjun Singh Rathore/Payment
+bank,bank_23,2026-08-04,,-3264.0,,AYESHA SID,Shopping,INR,,POS/AYESHA SID/RETAIL
+bank,bank_24,2026-08-05,,-150.38,597873400285,Divya Nair,Rent Split,INR,,UPI/597873400285/Divya Nair/Payment
+bank,bank_25,2026-08-05,,-1129.13,408642127159,Electricity Board BESCOM,Utilities,INR,,UPI/408642127159/Electricity Board BESCOM/Payment
+bank,bank_26,2026-08-06,,-320.05,574134293241,Mohammed Hasan Kabir,Rent Split,INR,,UPI/574134293241/Mohammed Hasan Kabir/Payment
+bank,bank_27,2026-08-06,,353.12,423527993212,Blinkit REFUND,Groceries,INR,,UPI/423527993212/Blinkit REFUND/Payment
+bank,bank_28,2026-08-06,,750.53,888534764524,Sneha Kulkarni,Shopping,INR,,UPI/888534764524/Sneha Kulkarni/Payment
+bank,bank_29,2026-08-06,,-89.02,579119006758,Rohit Verma,Personal Transfer,INR,,UPI/579119006758/Rohit Verma/Payment
+bank,bank_30,2026-08-07,,1200.45,864399322660,Manoj Kumar Yadav,Shopping,INR,,UPI/864399322660/Manoj Kumar Yadav/Payment
+bank,bank_31,2026-08-07,,-944.4,285599444448,Spotify,Entertainment,INR,,UPI/285599444448/Spotify/Payment
+bank,bank_32,2026-08-07,,150.72,549423999861,Mohammed Hasan Kabir,Shopping,INR,,UPI/549423999861/Mohammed Hasan Kabir/Payment
+bank,bank_33,2026-08-07,,-590.0,,,Bank Charges,INR,,ANNUAL MAINT CHG+GST
+bank,bank_34,2026-08-08,,-427.38,319327536739,BigBasket,Groceries,INR,,UPI/319327536739/BigBasket/Payment
+bank,bank_35,2026-08-08,,-750.82,298805510187,Arjun Singh Rathore,Food,INR,,UPI/298805510187/Arjun Singh Rathore/Payment
+bank,bank_36,2026-08-09,,-4500.27,285079946846,Neha Chopra,Bill Payment,INR,,UPI/285079946846/Neha Chopra/Payment
+bank,bank_37,2026-08-09,,-500.0,386850246100,Manoj Kumar Yadav,Personal Transfer,INR,,UPI/386850246100/Manoj Kumar Yadav/Payment
+bank,bank_38,2026-08-09,,150.69,942911269292,Sanjay Iyer,Food,INR,,UPI/942911269292/Sanjay Iyer/Payment
+bank,bank_39,2026-08-09,,750.36,201914802140,Ayesha Siddiqui,Rent Split,INR,,UPI/201914802140/Ayesha Siddiqui/Payment
+bank,bank_40,2026-08-09,,449.82,270121087425,Electricity Board BESCOM REFUND,Utilities,INR,,UPI/270121087425/Electricity Board BESCOM REFUND/Payment
+bank,bank_41,2026-08-09,,899.56,754470593937,Imran Ali Khan,Personal Transfer,INR,,UPI/754470593937/Imran Ali Khan/Payment
+bank,bank_42,2026-08-09,,-500.0,704077664685,Karan Malhotra,Personal Transfer,INR,,UPI/704077664685/Karan Malhotra/Payment
+bank,bank_43,2026-08-09,,-500.0,904986655669,Vikram Oberoi,Personal Transfer,INR,,UPI/904986655669/Vikram Oberoi/Payment
+bank,bank_44,2026-08-10,,511.13,764239461355,Spotify REFUND,Entertainment,INR,,UPI/764239461355/Spotify REFUND/Payment
+bank,bank_45,2026-08-10,,-1859.66,480451794684,Practo,Healthcare,INR,,UPI/480451794684/Practo/Payment
+bank,bank_46,2026-08-10,,-2345.17,823970258506,Blinkit,Groceries,INR,,UPI/823970258506/Blinkit/Payment
+bank,bank_47,2026-08-10,,150.59,456107482013,Vikram Oberoi,Bill Payment,INR,,UPI/456107482013/Vikram Oberoi/Payment
+bank,bank_48,2026-08-10,,500.34,439177029563,Deepika Reddy,Bill Payment,INR,,UPI/439177029563/Deepika Reddy/Payment
+bank,bank_49,2026-08-11,,-45.65,367279807972,Priya Ramesh Patel,Rent Split,INR,,UPI/367279807972/Priya Ramesh Patel/Payment
+bank,bank_50,2026-08-11,,-694.84,610935254212,Blinkit,Groceries,INR,,UPI/610935254212/Blinkit/Payment
+bank,bank_51,2026-08-12,,-2108.41,545212747285,Swiggy,Food & Dining,INR,,UPI/545212747285/Swiggy/Payment
+bank,bank_52,2026-08-13,,-275.51,789052050014,Divya Nair,Shopping,INR,,UPI/789052050014/Divya Nair/Payment
+bank,bank_53,2026-08-13,,-250.0,531560057967,Karan Malhotra,Personal Transfer,INR,,UPI/531560057967/Karan Malhotra/Payment
+bank,bank_54,2026-08-13,,-250.0,545670721108,Manoj Kumar Yadav,Personal Transfer,INR,,UPI/545670721108/Manoj Kumar Yadav/Payment
+bank,bank_55,2026-08-13,,-250.0,881664182120,Karan Malhotra,Personal Transfer,INR,,UPI/881664182120/Karan Malhotra/Payment
+bank,bank_56,2026-08-13,,-250.0,399599822755,Karan Malhotra,Personal Transfer,INR,,UPI/399599822755/Karan Malhotra/Payment
+bank,bank_57,2026-08-13,,-1107.43,910386547652,Netflix,Entertainment,INR,,UPI/910386547652/Netflix/Payment
+bank,bank_58,2026-08-13,,-250.0,334686771360,Karan Malhotra,Personal Transfer,INR,,UPI/334686771360/Karan Malhotra/Payment
+bank,bank_59,2026-08-13,,-2377.35,371905354805,Zomato,Food & Dining,INR,,UPI/371905354805/Zomato/Payment
+bank,bank_60,2026-08-13,,-150.48,631210330628,Karan Malhotra,Personal Transfer,INR,,UPI/631210330628/Karan Malhotra/Payment
+bank,bank_61,2026-08-14,,-320.57,606022976513,Arjun Singh Rathore,Rent Split,INR,,UPI/606022976513/Arjun Singh Rathore/Payment
+bank,bank_62,2026-08-14,,-3457.99,,ROHIT VERM,Transport,INR,,POS/ROHIT VERM/RETAIL
+bank,bank_63,2026-08-14,,750.94,281154632032,Sanjay Iyer,Personal Transfer,INR,,UPI/281154632032/Sanjay Iyer/Payment
+bank,bank_64,2026-08-14,,-166.83,,VIKRAM OBE,Transport,INR,,POS/VIKRAM OBE/RETAIL
+bank,bank_65,2026-08-14,,1200.09,899174012831,Neha Chopra,Food,INR,,UPI/899174012831/Neha Chopra/Payment
+bank,bank_66,2026-08-14,,-3124.86,,SNEHA KULK,Transport,INR,,POS/SNEHA KULK/RETAIL
+bank,bank_67,2026-08-14,,-60.88,595078867786,Sneha Kulkarni,Bill Payment,INR,,UPI/595078867786/Sneha Kulkarni/Payment
+bank,bank_68,2026-08-14,,890.4,609171509327,Blinkit REFUND,Groceries,INR,,UPI/609171509327/Blinkit REFUND/Payment
+bank,bank_69,2026-08-15,,60.24,278666534228,Priya Ramesh Patel,Bill Payment,INR,,UPI/278666534228/Priya Ramesh Patel/Payment
+bank,bank_70,2026-08-15,,-2228.76,488713898465,Airtel Posptaid,Utilities,INR,,UPI/488713898465/Airtel Posptaid/Payment
+bank,bank_71,2026-08-15,,-89.12,713102123210,Manoj Kumar Yadav,Rent Split,INR,,UPI/713102123210/Manoj Kumar Yadav/Payment
+bank,bank_72,2026-08-15,,-59.9,,ROHIT VERM,Shopping,INR,,POS/ROHIT VERM/RETAIL
+bank,bank_73,2026-08-15,,-1620.74,204734481719,Spotify,Entertainment,INR,,UPI/204734481719/Spotify/Payment
+bank,bank_74,2026-08-16,,1750.62,509879584664,Arjun Singh Rathore,Personal Transfer,INR,,UPI/509879584664/Arjun Singh Rathore/Payment
+bank,bank_75,2026-08-16,,-2774.81,,MANOJ KUMA,Food,INR,,POS/MANOJ KUMA/RETAIL
+bank,bank_76,2026-08-16,,-1078.46,942534770374,Myntra,Shopping,INR,,UPI/942534770374/Myntra/Payment
+bank,bank_77,2026-08-16,,-4500.09,274973831018,Rohit Verma,Food,INR,,UPI/274973831018/Rohit Verma/Payment
+bank,bank_78,2026-08-16,,-1809.63,964650626009,Local Kirana Store,Groceries,INR,,UPI/964650626009/Local Kirana Store/Payment
+bank,bank_79,2026-08-16,,-407.78,262986959215,Ola,Transport,INR,,UPI/262986959215/Ola/Payment
+bank,bank_80,2026-08-16,,217.2,879400024910,Blinkit REFUND,Groceries,INR,,UPI/879400024910/Blinkit REFUND/Payment
+bank,bank_81,2026-08-16,,299.52,963769118139,Sneha Kulkarni,Rent Split,INR,,UPI/963769118139/Sneha Kulkarni/Payment
+bank,bank_82,2026-08-16,,-342.49,936833086088,Electricity Board BESCOM,Utilities,INR,,UPI/936833086088/Electricity Board BESCOM/Payment
+bank,bank_83,2026-08-16,,-899.8,201132981883,Neha Chopra,Rent Split,INR,,UPI/201132981883/Neha Chopra/Payment
+bank,bank_84,2026-08-16,,-357.52,832552116141,Local Kirana Store,Groceries,INR,,UPI/832552116141/Local Kirana Store/Payment
+bank,bank_85,2026-08-17,,728.6,456921089803,Spotify REFUND,Entertainment,INR,,UPI/456921089803/Spotify REFUND/Payment
+bank,bank_86,2026-08-17,,-250.0,656800617183,Mohammed Hasan Kabir,Personal Transfer,INR,,UPI/656800617183/Mohammed Hasan Kabir/Payment
+bank,bank_87,2026-08-17,,89.34,382184450280,Manoj Kumar Yadav,Food,INR,,UPI/382184450280/Manoj Kumar Yadav/Payment
+bank,bank_88,2026-08-17,,-250.0,647841251628,Neha Chopra,Personal Transfer,INR,,UPI/647841251628/Neha Chopra/Payment
+bank,bank_89,2026-08-17,,-250.0,425077647096,Sneha Kulkarni,Personal Transfer,INR,,UPI/425077647096/Sneha Kulkarni/Payment
+bank,bank_90,2026-08-17,,-250.0,786860817810,Arjun Singh Rathore,Personal Transfer,INR,,UPI/786860817810/Arjun Singh Rathore/Payment
+bank,bank_91,2026-08-17,,-750.54,559001014029,Deepika Reddy,Bill Payment,INR,,UPI/559001014029/Deepika Reddy/Payment
+bank,bank_92,2026-08-17,,275.45,468327053776,Sanjay Iyer,Food,INR,,UPI/468327053776/Sanjay Iyer/Payment
+bank,bank_93,2026-08-17,,-964.08,407513927802,Airtel Postpaid,Utilities,INR,,UPI/407513927802/Airtel Postpaid/Payment
+bank,bank_94,2026-08-17,,-4500.19,677339447176,Deepika Reddy,Bill Payment,INR,,UPI/677339447176/Deepika Reddy/Payment
+bank,bank_95,2026-08-17,,500.69,765244057280,Divya Nair,Rent Split,INR,,UPI/765244057280/Divya Nair/Payment
+bank,bank_96,2026-08-17,,-120.77,802303742741,BigBasket,Groceries,INR,,UPI/802303742741/BigBasket/Payment
+bank,bank_97,2026-08-18,,-2491.36,694866240317,Local Kirana Store,Groceries,INR,,UPI/694866240317/Local Kirana Store/Payment
+bank,bank_98,2026-08-18,,-715.94,,AYESHA SID,Transport,INR,,POS/AYESHA SID/RETAIL
+bank,bank_99,2026-08-18,,89.53,229696030019,Sanjay Iyer,Personal Transfer,INR,,UPI/229696030019/Sanjay Iyer/Payment
+bank,bank_100,2026-08-18,,-1966.41,246286268218,Zmoato,Food & Dining,INR,,UPI/246286268218/Zmoato/Payment
+bank,bank_101,2026-08-18,,-170.27,991147732615,Swiggy,Food & Dining,INR,,UPI/991147732615/Swiggy/Payment
+bank,bank_102,2026-08-18,,-60.52,556747522506,Vikram Oberoi,Food,INR,,UPI/556747522506/Vikram Oberoi/Payment
+bank,bank_103,2026-08-19,,1505.14,,BATCH4471,Business Settlement,INR,,NEFT CR/RAZORPAY SETTLEMENT/BATCH4471
+bank,bank_104,2026-08-19,,-500.37,902532973417,Vikram Oberoi,Personal Transfer,INR,,UPI/902532973417/Vikram Oberoi/Payment
+bank,bank_105,2026-08-20,,-99.22,741668801912,Rohit Verma,Bill Payment,INR,,UPI/741668801912/Rohit Verma/Payment
+bank,bank_106,2026-08-20,,-2000.28,895012539902,Priya Ramesh Patel,Shopping,INR,,UPI/895012539902/Priya Ramesh Patel/Payment
+bank,bank_107,2026-08-21,,-323.84,966382928490,Airtel Potspaid,Utilities,INR,,UPI/966382928490/Airtel Potspaid/Payment
+bank,bank_108,2026-08-21,,-1750.39,511151657840,Sanjay Iyer,Shopping,INR,,UPI/511151657840/Sanjay Iyer/Payment
+bank,bank_109,2026-08-21,,-2850.79,,IMRAN ALI,Food,INR,,POS/IMRAN ALI /RETAIL
+bank,bank_110,2026-08-21,,750.62,963401305211,Arjun Singh Rathore,Personal Transfer,INR,,UPI/963401305211/Arjun Singh Rathore/Payment
+bank,bank_111,2026-08-22,,899.83,213887072746,Arjun Singh Rathore,Shopping,INR,,UPI/213887072746/Arjun Singh Rathore/Payment
+bank,bank_112,2026-08-22,,-45.83,770819608136,Manoj Kumar Yadav,Rent Split,INR,,UPI/770819608136/Manoj Kumar Yadav/Payment
+bank,bank_113,2026-08-23,,-2145.03,,AYESHA SID,Food,INR,,POS/AYESHA SID/RETAIL
+bank,bank_114,2026-08-23,,-1249.56,723145267115,Ola,Transport,INR,,UPI/723145267115/Ola/Payment
+bank,bank_115,2026-08-23,,-275.56,487452752158,Sneha Kulkarni,Food,INR,,UPI/487452752158/Sneha Kulkarni/Payment
+bank,bank_116,2026-08-24,,-551.99,757680671595,Swiggy,Food & Dining,INR,,UPI/757680671595/Swiggy/Payment
+bank,bank_117,2026-08-24,,-1141.87,,ROHIT VERM,Food,INR,,POS/ROHIT VERM/RETAIL
+bank,bank_118,2026-08-24,,-1063.43,654710831171,Electricity Board BESCOM,Utilities,INR,,UPI/654710831171/Electricity Board BESCOM/Payment
+bank,bank_119,2026-08-24,,-3000.0,,ATM (NATIONAL),Cash Withdrawal,INR,,ATM WDL/NATIONAL/BR4471
+bank,bank_120,2026-08-25,,-320.92,712450360047,Ayesha Siddiqui,Shopping,INR,,UPI/712450360047/Ayesha Siddiqui/Payment
+bank,bank_121,2026-08-25,,-3315.38,,PRIYA RAME,Shopping,INR,,POS/PRIYA RAME/RETAIL
+bank,bank_122,2026-08-25,,60.37,907450348014,Rohit Verma,Bill Payment,INR,,UPI/907450348014/Rohit Verma/Payment
+bank,bank_123,2026-08-26,,-322.6,,SNEHA KULK,Food,INR,,POS/SNEHA KULK/RETAIL
+bank,bank_124,2026-08-26,,-1366.35,202581536923,Zomato,Food & Dining,INR,,UPI/202581536923/Zomato/Payment
+bank,bank_125,2026-08-26,,-500.52,452558362365,Ayesha Siddiqui,Personal Transfer,INR,,UPI/452558362365/Ayesha Siddiqui/Payment
+bank,bank_126,2026-08-26,,-4500.66,292956548863,Manoj Kumar Yadav,Food,INR,,UPI/292956548863/Manoj Kumar Yadav/Payment
+bank,bank_127,2026-08-27,,42.5,,,Interest,INR,,INT.PD:SAV AC
+bank,bank_128,2026-08-27,,150.63,213442468479,Manoj Kumar Yadav,Shopping,INR,,UPI/213442468479/Manoj Kumar Yadav/Payment
+bank,bank_129,2026-08-27,,-275.35,923591853229,Vikram Oberoi,Rent Split,INR,,UPI/923591853229/Vikram Oberoi/Payment
+bank,bank_130,2026-08-27,,-352.77,,NEHA CHOPR,Food,INR,,POS/NEHA CHOPR/RETAIL
+bank,bank_131,2026-08-28,,-2284.08,733805200078,Zomato,Food & Dining,INR,,UPI/733805200078/Zomato/Payment
+bank,bank_132,2026-08-28,,750.86,273969679083,Divya Nair,Personal Transfer,INR,,UPI/273969679083/Divya Nair/Payment
+bank,bank_133,2026-08-28,,-175.51,505149987929,Swiggy,Food & Dining,INR,,UPI/505149987929/Swiggy/Payment
+bank,bank_134,2026-08-28,,-99.78,866506373277,Arjun Singh Rathore,Bill Payment,INR,,UPI/866506373277/Arjun Singh Rathore/Payment
+bank,bank_135,2026-08-29,,-1200.18,437552699486,Ayesha Siddiqui,Food,INR,,UPI/437552699486/Ayesha Siddiqui/Payment
+bank,bank_136,2026-08-29,,-5000.0,,,Investment,INR,,SI DEBIT/SIP MUTUAL FUND
+bank,bank_137,2026-08-29,,-3376.74,,SNEHA KULK,Food,INR,,POS/SNEHA KULK/RETAIL
+bank,bank_138,2026-08-29,,5000.0,,Cheque Clearing,Cheque,INR,,CHQ DEP CLEARING/00921
+bank,bank_139,2026-08-30,,-4500.81,824936515094,Mohammed Hasan Kabir,Rent Split,INR,,UPI/824936515094/Mohammed Hasan Kabir/Payment
+bank,bank_140,2026-08-30,,-99.09,434107653877,Karan Malhotra,Personal Transfer,INR,,UPI/434107653877/Karan Malhotra/Payment
+bank,bank_141,2026-08-30,,-1125.8,,NEHA CHOPR,Food,INR,,POS/NEHA CHOPR/RETAIL
+bank,bank_142,2026-08-30,,89.22,591559464006,Vikram Oberoi,Rent Split,INR,,UPI/591559464006/Vikram Oberoi/Payment
+bank,bank_143,2026-08-30,,320.09,282509366016,Neha Chopra,Rent Split,INR,,UPI/282509366016/Neha Chopra/Payment
+bank,bank_144,2026-08-30,,-80.03,,MANOJ KUMA,Transport,INR,,POS/MANOJ KUMA/RETAIL
+bank,bank_145,2026-08-30,,-299.04,884050248914,Neha Chopra,Bill Payment,INR,,UPI/884050248914/Neha Chopra/Payment

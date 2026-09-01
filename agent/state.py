@@ -13,6 +13,10 @@ class Record(BaseModel):
     time: Optional[str] = None
     amount: float
     transaction_id: Optional[str] = None
+    merchant: Optional[str] = None
+    category: Optional[str] = None
+    currency: str = "INR"
+    payment_method: Optional[str] = None
     raw_description: str
 
     def __getitem__(self, item: str) -> Any:

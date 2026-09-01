@@ -11,7 +11,7 @@ To preserve evaluation integrity, the matching agent at runtime has **zero acces
 1. `bank_statement.csv`
 2. `gpay_history.csv`
 
-The offline evaluation script ([eval.py](file:///c:/Users/Hasan/Projects/razorpay%20buildathon/Mint-and-Match/eval.py)) reads the exported [reconciliation_report.json](file:///c:/Users/Hasan/Projects/razorpay%20buildathon/Mint-and-Match/reconciliation_report.json) and compares it against expected ground-truth labels post-run.
+The offline evaluation script ([eval.py](file:///c:/Users/Hasan/Projects/razorpay%20buildathon/Mint-and-Match/eval.py)) reads the exported [reconciliation_report.json](file:///c:/Users/Hasan/Projects/razorpay%20buildathon/Mint-and-Match/output/reconciliation_report.json) and compares it against expected ground-truth labels post-run.
 
 ---
 
@@ -37,5 +37,5 @@ python main.py
 
 Run the offline evaluator:
 ```bash
-python eval.py --report reconciliation_report.json
+python eval.py
 ```
