@@ -99,16 +99,16 @@ document.addEventListener('DOMContentLoaded', () => {
     gpayFile = file;
   });
 
-  // --- Load Sample Test Dataset (146 records) ---
+  // --- Load Sample Test Dataset (v3 - 106 records) ---
   loadSampleBtn.addEventListener('click', () => {
     isSampleSelected = true;
     bankFile = null;
     gpayFile = null;
 
-    bankStatus.textContent = 'bank_statement_v2.csv (146 records loaded)';
+    bankStatus.textContent = 'bank_statement_v3.csv (106 records loaded)';
     bankDropzone.classList.add('has-file');
 
-    gpayStatus.textContent = 'gpay_history_v2.csv (148 records loaded)';
+    gpayStatus.textContent = 'gpay_history_v3.csv (103 records loaded)';
     gpayDropzone.classList.add('has-file');
 
     loadSampleBtn.textContent = '✓ Sample batch ready to reconcile';
@@ -168,15 +168,15 @@ document.addEventListener('DOMContentLoaded', () => {
         await new Promise(r => setTimeout(r, 1000));
         data = {
           stats: {
-            total_bank_records: 146,
-            total_gpay_records: 148,
-            tier1_exact_matches: 107,
-            tier2_fuzzy_matches: 20,
-            total_confirmed_matches: 127,
-            unresolved_exceptions: 19,
-            match_rate_percent: 86.99,
-            processing_time_seconds: 3.18,
-            throughput_records_per_second: 45.84,
+            total_bank_records: 106,
+            total_gpay_records: 103,
+            tier1_exact_matches: 68,
+            tier2_fuzzy_matches: 15,
+            total_confirmed_matches: 83,
+            unresolved_exceptions: 23,
+            match_rate_percent: 78.3,
+            processing_time_seconds: 3.5,
+            throughput_records_per_second: 30.2,
           }
         };
       }
@@ -198,20 +198,35 @@ document.addEventListener('DOMContentLoaded', () => {
       resultsDiv.style.fontSize = '0.875rem';
       resultsDiv.style.color = '#1A1A1A';
       resultsDiv.innerHTML = `
-        <div style="font-weight: 600; margin-bottom: 0.5rem; color: #0F5C4D; display: flex; justify-content: space-between; align-items: center;">
-          <span>Reconciliation Batch Summary</span>
+        <div style="font-weight: 600; margin-bottom: 0.75rem; color: #0F5C4D; display: flex; justify-content: space-between; align-items: center;">
+          <span>Reconciliation Summary</span>
           <span style="font-size: 0.75rem; background: #0F5C4D; color: #FAF9F6; padding: 2px 8px; border-radius: 4px;">Verified</span>
         </div>
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 6px; margin-bottom: 8px;">
-          <div>• <strong>Bank Records:</strong> ${stats.total_bank_records || 146}</div>
-          <div>• <strong>Payment Records:</strong> ${stats.total_gpay_records || 148}</div>
-          <div>• <strong>Confirmed Matches:</strong> ${stats.total_confirmed_matches || 127}</div>
-          <div>• <strong>Tier-1 Exact (ID):</strong> ${stats.tier1_exact_matches || 107}</div>
-          <div>• <strong>Tier-2 Fuzzy:</strong> ${stats.tier2_fuzzy_matches || 20}</div>
-          <div>• <strong>Honest Exceptions:</strong> ${stats.unresolved_exceptions || 19}</div>
+        
+        <div style="display: flex; flex-direction: column; gap: 7px; margin-bottom: 12px;">
+          <div style="display: flex; justify-content: space-between;">
+            <span>🎯 <strong>Tier 1 Matches (Exact ID):</strong></span>
+            <span style="font-weight: 600; color: #0F5C4D;">${stats.tier1_exact_matches || 0}</span>
+          </div>
+          <div style="display: flex; justify-content: space-between;">
+            <span>🔍 <strong>Tier 2 Matches (Amount + Date):</strong></span>
+            <span style="font-weight: 600; color: #0F5C4D;">${stats.tier2_fuzzy_matches || 0}</span>
+          </div>
+          <div style="display: flex; justify-content: space-between;">
+            <span>⚠️ <strong>Tier 3 Exceptions (Unresolved):</strong></span>
+            <span style="font-weight: 600; color: #C05621;">${stats.unresolved_exceptions || 0}</span>
+          </div>
+          <div style="margin-top: 6px; padding-top: 6px; border-top: 1px dashed rgba(15,92,77,0.2); display: flex; justify-content: space-between;">
+            <span>📊 <strong>Overall Match Rate:</strong></span>
+            <span style="font-weight: 700; color: #0F5C4D;">${stats.match_rate_percent || 0}% (${stats.total_confirmed_matches || 0}/${stats.total_bank_records || 0})</span>
+          </div>
         </div>
-        <div style="border-top: 1px solid rgba(15,92,77,0.12); padding-top: 6px; font-size: 0.8125rem; color: #5A5A5A;">
-          ⚡ Throughput: <strong>${stats.throughput_records_per_second || 45.8} records/sec</strong> in ${stats.processing_time_seconds || 3.18}s
+
+        <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(15,92,77,0.12); padding-top: 10px; margin-top: 8px;">
+          <span style="font-size: 0.75rem; color: #5A5A5A;">⚡ ${stats.throughput_records_per_second || 0} rec/s (${stats.processing_time_seconds || 0}s)</span>
+          <a href="/api/download-report" download="reconciliation_report.csv" style="display: inline-flex; align-items: center; gap: 6px; background: #0F5C4D; color: #fff; padding: 6px 12px; border-radius: 6px; text-decoration: none; font-size: 0.8125rem; font-weight: 500; transition: background 0.2s;">
+            📥 Download Report CSV
+          </a>
         </div>
       `;
       dialog.appendChild(resultsDiv);

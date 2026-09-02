@@ -1,0 +1,104 @@
+source,row_id,date,time,amount,transaction_id,merchant,category,currency,payment_method,raw_description
+gpay,gpay_0,2026-08-01,11:19,-45.08,720426286364,Karan Bro,,INR,UPI,Paid to Karan Bro
+gpay,gpay_1,2026-08-01,20:19,-750.08,315962135605,Hasan Bhai,,INR,UPI,Paid to Hasan Bhai
+gpay,gpay_2,2026-08-01,20:29,-75000.0,296302151874,Sanjay Uncle,,INR,UPI,Paid to Sanjay Uncle
+gpay,gpay_3,2026-08-01,12:37,-1591.32,342601659275,Amazon Pay,,INR,UPI,Paid to Amazon Pay
+gpay,gpay_4,2026-08-02,11:31,-45.19,577497923564,Arjun Gym,,INR,UPI,Paid to Arjun Gym
+gpay,gpay_5,2026-08-02,10:06,320.78,989689563902,Arjun Gym,,INR,UPI,Received from Arjun Gym
+gpay,gpay_6,2026-08-03,15:45,-979.17,298497425546,Blinkit,,INR,UPI,Paid to Blinkit
+gpay,gpay_7,2026-08-04,13:56,-299.99,522739572552,Karan Bro,,INR,UPI,Paid to Karan Bro
+gpay,gpay_8,2026-08-05,16:24,-750.41,673549503741,Sanjay Uncle,,INR,UPI,Paid to Sanjay Uncle
+gpay,gpay_9,2026-08-05,12:22,299.55,353867515877,Hasan Bhai,,INR,UPI,Received from Hasan Bhai
+gpay,gpay_10,2026-08-05,16:11,351.17,465328837561,Blinkit (Refund),,INR,UPI,Received from Blinkit (Refund)
+gpay,gpay_11,2026-08-06,09:23,-1114.37,455929490116,Netflix,,INR,UPI,Paid to Netflix
+gpay,gpay_12,2026-08-06,23:14,99.4,844829864549,Hasan Bhai,,INR,UPI,Received from Hasan Bhai
+gpay,gpay_13,2026-08-07,08:42,-1119.49,232761401343,Zomato,,INR,UPI,Paid to Zomato
+gpay,gpay_14,2026-08-07,16:01,-1893.46,722776364350,Netflix,,INR,UPI,Paid to Netflix
+gpay,gpay_15,2026-08-07,09:35,299.27,733079174574,Sanjay Uncle,,INR,UPI,Received from Sanjay Uncle
+gpay,gpay_16,2026-08-07,22:59,2000.4,481075427829,Arjun Gym,,INR,UPI,Received from Arjun Gym
+gpay,gpay_17,2026-08-07,15:10,-1858.21,346774400818,Myntra,,INR,UPI,Paid to Myntra
+gpay,gpay_18,2026-08-09,11:00,-1481.23,845591121498,Zomato,,INR,UPI,Paid to Zomato
+gpay,gpay_19,2026-08-10,15:47,-299.51,942814175103,Divya Roomie,,INR,UPI,Paid to Divya Roomie
+gpay,gpay_20,2026-08-10,15:00,-3155.79,492852849261,Sanjay Uncle,,INR,UPI,Paid to Sanjay Uncle
+gpay,gpay_21,2026-08-12,19:25,-320.57,814054955896,Sneha Di,,INR,UPI,Paid to Sneha Di
+gpay,gpay_22,2026-08-12,07:38,1119.78,380219111779,Netflix (Refund),,INR,UPI,Received from Netflix (Refund)
+gpay,gpay_23,2026-08-12,08:24,-2123.97,866424110294,Netflix,,INR,UPI,Paid to Netflix
+gpay,gpay_24,2026-08-12,15:12,-2453.25,356290588092,Vikram Landlord,,INR,UPI,Paid to Vikram Landlord
+gpay,gpay_25,2026-08-13,09:29,2000.01,492240962809,Sneha Di,,INR,UPI,Received from Sneha Di
+gpay,gpay_26,2026-08-13,09:16,-320.18,420678652212,Sneha Di,,INR,UPI,Paid to Sneha Di
+gpay,gpay_27,2026-08-14,18:31,-2961.87,960556952299,Neha,,INR,UPI,Paid to Neha
+gpay,gpay_28,2026-08-14,10:17,-1178.43,490531435917,Ayesha,,INR,UPI,Paid to Ayesha
+gpay,gpay_29,2026-08-15,17:13,-500.65,540291159942,Rohit Office,,INR,UPI,Paid to Rohit Office
+gpay,gpay_30,2026-08-15,15:04,-1850.9,688188127049,Fatima,,INR,UPI,Paid to Fatima
+gpay,gpay_31,2026-08-15,09:53,-1274.58,229885860543,Arjun Gym,,INR,UPI,Paid to Arjun Gym
+gpay,gpay_32,2026-08-15,21:23,-2194.69,289723236063,Amazon Pay,,INR,UPI,Paid to Amazon Pay
+gpay,gpay_33,2026-08-15,22:20,-320.34,396110645852,Neha,,INR,UPI,Paid to Neha
+gpay,gpay_34,2026-08-15,17:44,-1370.27,794765013885,BigBasket,,INR,UPI,Paid to BigBasket
+gpay,gpay_35,2026-08-17,07:01,-250.0,929642754134,Sanjay Uncle,,INR,UPI,Paid to Sanjay Uncle
+gpay,gpay_36,2026-08-17,11:13,320.46,418614875889,Hasan Bhai,,INR,UPI,Received from Hasan Bhai
+gpay,gpay_37,2026-08-17,12:45,-250.0,959238203906,Rohit Office,,INR,UPI,Paid to Rohit Office
+gpay,gpay_38,2026-08-17,10:00,-250.0,437599408804,Sneha Di,,INR,UPI,Paid to Sneha Di
+gpay,gpay_39,2026-08-17,16:38,-250.0,631530240036,Arjun Gym,,INR,UPI,Paid to Arjun Gym
+gpay,gpay_40,2026-08-17,23:19,-250.0,282017931826,Rohit Office,,INR,UPI,Paid to Rohit Office
+gpay,gpay_41,2026-08-17,12:53,-250.0,676729747396,Rohit Office,,INR,UPI,Paid to Rohit Office
+gpay,gpay_42,2026-08-17,10:27,-1636.77,432162621292,BigBasket,,INR,UPI,Paid to BigBasket
+gpay,gpay_43,2026-08-17,17:31,-662.97,279720616868,BigBasket,,INR,UPI,Paid to BigBasket
+gpay,gpay_44,2026-08-17,15:20,-3259.61,269765193723,Sneha Di,,INR,UPI,Paid to Sneha Di
+gpay,gpay_45,2026-08-17,09:16,-250.0,234890771174,Neha,,INR,UPI,Paid to Neha
+gpay,gpay_46,2026-08-17,20:39,-559.78,454089744397,Myntra,,INR,UPI,Paid to Myntra
+gpay,gpay_47,2026-08-17,20:50,-100000.0,449411207956,Rohit Office,,INR,UPI,Paid to Rohit Office
+gpay,gpay_48,2026-08-17,19:40,-250.0,405479409428,Karan Bro,,INR,UPI,Paid to Karan Bro
+gpay,gpay_49,2026-08-18,07:37,1200.19,329955396656,Priya,,INR,UPI,Received from Priya
+gpay,gpay_50,2026-08-18,14:21,-150.22,221792926625,Sneha Di,,INR,UPI,Paid to Sneha Di
+gpay,gpay_51,2026-08-18,17:41,-99.11,773205785883,Divya Roomie,,INR,UPI,Paid to Divya Roomie
+gpay,gpay_52,2026-08-18,21:36,299.36,990077837768,Sneha Di,,INR,UPI,Received from Sneha Di
+gpay,gpay_53,2026-08-18,19:21,-2914.28,874692106935,Zomato,,INR,UPI,Paid to Zomato
+gpay,gpay_54,2026-08-18,14:51,299.84,521072509156,Hasan Bhai,,INR,UPI,Received from Hasan Bhai
+gpay,gpay_55,2026-08-19,16:53,-1834.84,338095306330,Swiggy,,INR,UPI,Paid to Swiggy
+gpay,gpay_56,2026-08-19,23:16,-250.0,693184488747,Rohit Office,,INR,UPI,Paid to Rohit Office
+gpay,gpay_57,2026-08-19,14:54,434.66,584900126654,BigBasket (Refund),,INR,UPI,Received from BigBasket (Refund)
+gpay,gpay_58,2026-08-19,10:10,-727.03,524400230415,Ayesha,,INR,UPI,Paid to Ayesha
+gpay,gpay_59,2026-08-19,16:09,-250.0,404588698873,Divya Roomie,,INR,UPI,Paid to Divya Roomie
+gpay,gpay_60,2026-08-19,18:38,-250.0,451266288399,Fatima,,INR,UPI,Paid to Fatima
+gpay,gpay_61,2026-08-19,11:51,-250.0,561594692031,Vikram Landlord,,INR,UPI,Paid to Vikram Landlord
+gpay,gpay_62,2026-08-19,19:37,-50000.0,569368628662,Vikram Landlord,,INR,UPI,Paid to Vikram Landlord
+gpay,gpay_63,2026-08-20,08:40,-1200.14,616636171359,Karan Bro,,INR,UPI,Paid to Karan Bro
+gpay,gpay_64,2026-08-20,16:25,-3232.95,787094833018,Priya,,INR,UPI,Paid to Priya
+gpay,gpay_65,2026-08-20,10:42,-2275.29,281352750162,Karan Bro,,INR,UPI,Paid to Karan Bro
+gpay,gpay_66,2026-08-20,14:13,-3073.24,496792842666,Fatima,,INR,UPI,Paid to Fatima
+gpay,gpay_67,2026-08-21,14:36,-99.23,775382340381,Sanjay Uncle,,INR,UPI,Paid to Sanjay Uncle
+gpay,gpay_68,2026-08-21,23:02,1128.43,552666462602,Zomato (Refund),,INR,UPI,Received from Zomato (Refund)
+gpay,gpay_69,2026-08-21,20:25,-624.35,940949830485,Swiggy,,INR,UPI,Paid to Swiggy
+gpay,gpay_70,2026-08-22,19:21,-320.67,864338455642,Divya Roomie,,INR,UPI,Paid to Divya Roomie
+gpay,gpay_71,2026-08-22,20:55,-750.66,387551845177,Neha,,INR,UPI,Paid to Neha
+gpay,gpay_72,2026-08-23,18:11,1251.39,249117736569,Swiggy (Refund),,INR,UPI,Received from Swiggy (Refund)
+gpay,gpay_73,2026-08-24,13:26,2000.09,781465847684,Fatima,,INR,UPI,Received from Fatima
+gpay,gpay_74,2026-08-24,20:16,2000.28,822787182449,Hasan Bhai,,INR,UPI,Received from Hasan Bhai
+gpay,gpay_75,2026-08-24,13:09,500.79,846878837315,Ayesha,,INR,UPI,Received from Ayesha
+gpay,gpay_76,2026-08-25,21:26,-500.38,985159852791,Divya Roomie,,INR,UPI,Paid to Divya Roomie
+gpay,gpay_77,2026-08-25,21:04,-2334.97,365058294039,Zomato,,INR,UPI,Paid to Zomato
+gpay,gpay_78,2026-08-25,22:48,-2595.09,334790777734,Rohit Office,,INR,UPI,Paid to Rohit Office
+gpay,gpay_79,2026-08-26,19:26,899.33,488502629567,Arjun Gym,,INR,UPI,Received from Arjun Gym
+gpay,gpay_80,2026-08-26,14:37,-763.75,208242303214,Netflix,,INR,UPI,Paid to Netflix
+gpay,gpay_81,2026-08-26,17:27,-155.97,804416592580,Blinkit,,INR,UPI,Paid to Blinkit
+gpay,gpay_82,2026-08-26,15:43,-328.84,427283164770,Netflix,,INR,UPI,Paid to Netflix
+gpay,gpay_83,2026-08-27,19:49,150.18,785708884709,Hasan Bhai,,INR,UPI,Received from Hasan Bhai
+gpay,gpay_84,2026-08-27,09:30,-398.41,374529054091,Zomato,,INR,UPI,Paid to Zomato
+gpay,gpay_85,2026-08-27,19:26,500.38,569571961386,Ayesha,,INR,UPI,Received from Ayesha
+gpay,gpay_86,2026-08-27,07:48,-1392.09,871177435150,BigBasket,,INR,UPI,Paid to BigBasket
+gpay,gpay_87,2026-08-28,11:55,-250.0,292612825085,Sanjay Uncle,,INR,UPI,Paid to Sanjay Uncle
+gpay,gpay_88,2026-08-28,13:47,899.56,658440194119,Sanjay Uncle,,INR,UPI,Received from Sanjay Uncle
+gpay,gpay_89,2026-08-28,17:49,-500.61,989338887875,Fatima,,INR,UPI,Paid to Fatima
+gpay,gpay_90,2026-08-28,22:21,-250.0,699417857709,Neha,,INR,UPI,Paid to Neha
+gpay,gpay_91,2026-08-28,19:15,-1287.99,218810192925,Ayesha,,INR,UPI,Paid to Ayesha
+gpay,gpay_92,2026-08-28,14:11,-1076.21,517564840957,Uber,,INR,UPI,Paid to Uber
+gpay,gpay_93,2026-08-28,12:04,45.18,972620652126,Divya Roomie,,INR,UPI,Received from Divya Roomie
+gpay,gpay_94,2026-08-28,07:03,-250.0,857113323475,Priya,,INR,UPI,Paid to Priya
+gpay,gpay_95,2026-08-28,07:33,-45.0,923038573098,Vikram Landlord,,INR,UPI,Paid to Vikram Landlord
+gpay,gpay_96,2026-08-29,09:02,-351.96,524510560797,Blinkit,,INR,UPI,Paid to Blinkit
+gpay,gpay_97,2026-08-29,23:15,-1573.38,976560320268,Ayesha,,INR,UPI,Paid to Ayesha
+gpay,gpay_98,2026-08-29,13:57,99.67,578806052288,Neha,,INR,UPI,Received from Neha
+gpay,gpay_99,2026-08-29,19:16,-733.46,799337389259,Uber,,INR,UPI,Paid to Uber
+gpay,gpay_100,2026-08-30,08:07,-899.6,379165181127,Arjun Gym,,INR,UPI,Paid to Arjun Gym
+gpay,gpay_101,2026-08-30,10:46,-1200.65,391379449517,Vikram Landlord,,INR,UPI,Paid to Vikram Landlord
+gpay,gpay_102,2026-08-30,22:34,2000.29,274114868528,Sanjay Uncle,,INR,UPI,Received from Sanjay Uncle

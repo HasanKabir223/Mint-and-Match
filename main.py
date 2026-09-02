@@ -35,14 +35,14 @@ def parse_args():
     parser.add_argument(
         "--bank",
         type=str,
-        default="new data/bank_statement_v2.csv",
-        help="Path to bank statement CSV (default: new data/bank_statement_v2.csv)",
+        default="data v3/bank_statement_v3.csv",
+        help="Path to bank statement CSV (default: data v3/bank_statement_v3.csv)",
     )
     parser.add_argument(
         "--gpay",
         type=str,
-        default="new data/gpay_history_v2.csv",
-        help="Path to GPay payment history CSV (default: new data/gpay_history_v2.csv)",
+        default="data v3/gpay_history_v3.csv",
+        help="Path to GPay payment history CSV (default: data v3/gpay_history_v3.csv)",
     )
     parser.add_argument(
         "--output",
@@ -217,11 +217,11 @@ def main():
 
     bank_path = resolve_data_path(
         args.bank,
-        ["new data/bank_statement_v2.csv", "data/bank_statement.csv", "bank_statement.csv"]
+        ["data v3/bank_statement_v3.csv", "new data/bank_statement_v2.csv", "data/bank_statement.csv", "bank_statement.csv"]
     )
     gpay_path = resolve_data_path(
         args.gpay,
-        ["new data/gpay_history_v2.csv", "data/gpay_history.csv", "gpay_history.csv"]
+        ["data v3/gpay_history_v3.csv", "new data/gpay_history_v2.csv", "data/gpay_history.csv", "gpay_history.csv"]
     )
 
     print(f"[*] Normalizing input sources:\n    - Bank: {bank_path}\n    - GPay: {gpay_path}")

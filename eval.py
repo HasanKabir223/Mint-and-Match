@@ -146,8 +146,8 @@ def evaluate_report(report_path: str, bank_csv: str, gpay_csv: str) -> Dict[str,
 def main():
     parser = argparse.ArgumentParser(description="Mint & Match Offline Evaluator")
     parser.add_argument("--report", type=str, default="output/reconciliation_report.json")
-    parser.add_argument("--bank", type=str, default="new data/bank_statement_v2.csv")
-    parser.add_argument("--gpay", type=str, default="new data/gpay_history_v2.csv")
+    parser.add_argument("--bank", type=str, default="data v3/bank_statement_v3.csv")
+    parser.add_argument("--gpay", type=str, default="data v3/gpay_history_v3.csv")
     args = parser.parse_args()
 
     report_path = resolve_data_path(
@@ -160,11 +160,11 @@ def main():
 
     bank_path = resolve_data_path(
         args.bank,
-        ["new data/bank_statement_v2.csv", "data/bank_statement.csv", "bank_statement.csv"]
+        ["data v3/bank_statement_v3.csv", "new data/bank_statement_v2.csv", "data/bank_statement.csv", "bank_statement.csv"]
     )
     gpay_path = resolve_data_path(
         args.gpay,
-        ["new data/gpay_history_v2.csv", "data/gpay_history.csv", "gpay_history.csv"]
+        ["data v3/gpay_history_v3.csv", "new data/gpay_history_v2.csv", "data/gpay_history.csv", "gpay_history.csv"]
     )
 
     if not os.path.exists(bank_path):
