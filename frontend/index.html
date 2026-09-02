@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mint & Match — Reconciliation you can actually trust.</title>
+  <meta name="description" content="Mint & Match matches your bank statement against your payment history — and tells you the truth about what it couldn't.">
+  
+  <!-- Inter Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;550;600&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Minimal Brand Header -->
+  <header class="site-header">
+    <a href="#" class="brand-wordmark" id="brand-logo">
+      <span class="brand-dot"></span>
+      Mint &amp; Match
+    </a>
+  </header>
+
+  <main>
+    <!-- Section 1 — Hero (100vh Full Viewport) -->
+    <section class="hero-section" id="hero">
+      <div class="hero-container">
+        <h1 class="hero-title">Reconciliation you can actually trust.</h1>
+        <p class="hero-subtitle">Mint &amp; Match matches your bank statement against your payment history &mdash; and tells you the truth about what it couldn't.</p>
+        
+        <button type="button" class="cta-button" id="open-upload-btn">
+          <span>Upload your statements</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M8 12V4M8 4L4.5 7.5M8 4L11.5 7.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+
+        <!-- Hero Animation: Subtle Ledger Verification Alignment (60fps CSS/SVG) -->
+        <div class="hero-visual-wrapper" aria-label="Transaction matching visual animation">
+          <div class="reconciliation-canvas">
+            <!-- Parallel Stream Guides -->
+            <div class="stream-track top"></div>
+            <span class="track-label top">Bank Statement</span>
+
+            <div class="stream-track bottom"></div>
+            <span class="track-label bottom">Payment App</span>
+
+            <!-- Center Alignment Axis & Verification Lock -->
+            <div class="match-zone">
+              <div class="match-axis"></div>
+              <div class="lock-badge" title="Verified Match">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20 6L9 17L4 12"/>
+                </svg>
+              </div>
+            </div>
+
+            <!-- Gliding Transaction Streams -->
+            <div class="txn-stream">
+              <!-- Pair 1: Reconciles into center -->
+              <div class="txn-token token-bank-1">
+                <span class="token-dot"></span>
+                <span>UPI/808117... &bull; &minus;&dollar;750.59</span>
+              </div>
+              <div class="txn-token token-gpay-1">
+                <span class="token-dot"></span>
+                <span>Txn 808117... &bull; &minus;&dollar;750.59</span>
+              </div>
+
+              <!-- Pair 2: Offset pair converging -->
+              <div class="txn-token token-bank-2">
+                <span class="token-dot"></span>
+                <span>UPI/562428... &bull; &minus;&dollar;2,000.62</span>
+              </div>
+              <div class="txn-token token-gpay-2">
+                <span class="token-dot"></span>
+                <span>Txn 562428... &bull; &minus;&dollar;2,000.62</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2 — Product Explanation (Split 2-Column Layout from Spec) -->
+    <section class="product-section" id="how-it-works">
+      <div class="split-layout">
+        
+        <!-- Left Column: Title & Subtitle -->
+        <div class="split-left">
+          <span class="section-eyebrow">HOW IT WORKS</span>
+          <h2 class="split-headline">
+            Match what&rsquo;s<br>
+            certain.<br>
+            <span class="text-highlight">See what<br>isn&rsquo;t.</span>
+          </h2>
+          <p class="split-subtext">
+            A short path from two messy files to a record you can stand behind.
+          </p>
+        </div>
+
+        <!-- Right Column: 3 Horizontal Feature Rows with Divider Lines -->
+        <div class="split-right">
+          
+          <!-- Row 01 -->
+          <article class="feature-row">
+            <span class="step-badge">01</span>
+            <div class="feature-icon-circle" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                <polyline points="14 2 14 8 20 8"/>
+                <line x1="16" y1="13" x2="8" y2="13"/>
+                <line x1="16" y1="17" x2="8" y2="17"/>
+                <line x1="10" y1="9" x2="8" y2="9"/>
+              </svg>
+            </div>
+            <div class="feature-content">
+              <h3 class="feature-title">Upload your statements</h3>
+              <p class="feature-desc">Bank statement and payment app history, both as CSV. Nothing else is needed to begin.</p>
+            </div>
+          </article>
+
+          <!-- Row 02 -->
+          <article class="feature-row">
+            <span class="step-badge">02</span>
+            <div class="feature-icon-circle" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 2a10 10 0 0 0-7.07 17.07"/>
+                <path d="M12 6a6 6 0 0 0-4.24 10.24"/>
+                <path d="M12 10a2 2 0 0 0-1.41 3.41"/>
+                <path d="M12 14v8"/>
+                <path d="M16 12a4 4 0 0 1-2.83 6.83"/>
+                <path d="M19.07 4.93A10 10 0 0 1 12 22"/>
+              </svg>
+            </div>
+            <div class="feature-content">
+              <h3 class="feature-title">We match what&rsquo;s certain</h3>
+              <p class="feature-desc">Transaction IDs connect the records that agree, without making assumptions about the rest.</p>
+            </div>
+          </article>
+
+          <!-- Row 03 -->
+          <article class="feature-row">
+            <span class="step-badge">03</span>
+            <div class="feature-icon-circle" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/>
+                <line x1="4" y1="22" x2="4" y2="15"/>
+              </svg>
+            </div>
+            <div class="feature-content">
+              <h3 class="feature-title">We&rsquo;re honest about the rest</h3>
+              <p class="feature-desc">Exceptions stay clearly flagged with real reasons, so every unresolved line is visible.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Minimal Footer -->
+  <footer class="site-footer">
+    <div class="footer-wordmark">
+      <span>Mint &amp; Match</span> &bull; Calm Finance Operations &bull; 2026
+    </div>
+  </footer>
+
+  <!-- Interactive Upload Modal -->
+  <div class="modal-backdrop" id="upload-modal" role="dialog" aria-modal="true" aria-labelledby="modal-heading">
+    <div class="modal-dialog">
+      <button type="button" class="modal-close-btn" id="close-modal-btn" aria-label="Close upload dialog">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+
+      <h3 class="modal-title" id="modal-heading">Upload statements</h3>
+      <p class="modal-subtitle">Select both CSV files to start the reconciliation pipeline.</p>
+
+      <div class="dropzone-grid">
+        <!-- Bank CSV Dropzone -->
+        <div class="dropzone" id="bank-dropzone" tabindex="0">
+          <input type="file" id="bank-file-input" accept=".csv" style="display: none;">
+          <div class="dropzone-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 21h18"/>
+              <path d="M3 10h18"/>
+              <path d="M5 6l7-3 7 3"/>
+              <path d="M4 10v11"/>
+              <path d="M20 10v11"/>
+              <path d="M8 14v4"/>
+              <path d="M12 14v4"/>
+              <path d="M16 14v4"/>
+            </svg>
+          </div>
+          <div class="dropzone-info">
+            <div class="dropzone-label">Bank Statement CSV</div>
+            <div class="dropzone-status" id="bank-status">Click or drop file here</div>
+          </div>
+        </div>
+
+        <!-- GPay / Payment App Dropzone -->
+        <div class="dropzone" id="gpay-dropzone" tabindex="0">
+          <input type="file" id="gpay-file-input" accept=".csv" style="display: none;">
+          <div class="dropzone-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="5" width="20" height="14" rx="2"/>
+              <line x1="2" y1="10" x2="22" y2="10"/>
+            </svg>
+          </div>
+          <div class="dropzone-info">
+            <div class="dropzone-label">Payment History CSV</div>
+            <div class="dropzone-status" id="gpay-status">Click or drop file here</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-actions">
+        <button type="button" class="cta-button" id="start-reconcile-btn">
+          Run Reconciliation
+        </button>
+        <button type="button" class="secondary-action-btn" id="load-sample-btn">
+          Or load sample test batch (146 records)
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>

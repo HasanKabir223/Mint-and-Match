@@ -1,0 +1,820 @@
+/* ==========================================================================
+   Mint & Match — Design System & Stylesheet
+   Apple/Linear-Level Calm Minimalism
+   ========================================================================== */
+
+:root {
+  /* Strict Color Palette */
+  --color-primary: #0F5C4D;         /* Deep mint / emerald green */
+  --color-primary-hover: #0b4539;   /* Subtle darkened mint for interaction */
+  --color-primary-subtle: rgba(15, 92, 77, 0.08); /* Minimal tinted background */
+  --color-primary-border: rgba(15, 92, 77, 0.15); /* Hairline borders */
+  
+  --color-bg: #FAF9F6;              /* Soft off-white / cream */
+  --color-bg-elevated: #FFFFFF;     /* Pure white for minimal card elevations */
+  
+  --color-accent: #D4A34C;          /* Muted gold (used very sparingly) */
+  --color-accent-subtle: rgba(212, 163, 76, 0.12);
+  
+  --color-text-heading: #1A1A1A;    /* Near-black */
+  --color-text-body: #5A5A5A;       /* Muted grey */
+  --color-text-muted: #8A8A8A;      /* Light neutral grey */
+
+  /* Typography */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
+
+  /* Geometry */
+  --radius-sm: 6px;
+  --radius-md: 9px;                 /* 8-10px requested radius */
+  --radius-lg: 14px;
+  --radius-full: 9999px;
+
+  /* Layout */
+  --max-width: 1040px;
+  --transition-smooth: 240ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Base Reset & Foundations */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: var(--font-sans);
+  background-color: var(--color-bg);
+  color: var(--color-text-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.6;
+  font-size: 1rem;
+  background-color: var(--color-bg);
+  color: var(--color-text-body);
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+/* Selection */
+::selection {
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+}
+
+/* Top Navigation / Brand Header */
+.site-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2.5rem 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+}
+
+.brand-wordmark {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--color-text-heading);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: opacity var(--transition-smooth);
+}
+
+.brand-wordmark:hover {
+  opacity: 0.8;
+}
+
+.brand-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+}
+
+/* ==========================================================================
+   Section 1 — Hero (100vh Full Viewport)
+   ========================================================================== */
+
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem 1.5rem 3rem;
+  text-align: center;
+  position: relative;
+}
+
+.hero-container {
+  max-width: 820px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-title {
+  font-size: clamp(2.35rem, 5.5vw, 4.15rem);
+  font-weight: 550;
+  line-height: 1.12;
+  letter-spacing: -0.035em;
+  color: var(--color-text-heading);
+  margin-bottom: 1.25rem;
+  max-width: 780px;
+}
+
+.hero-subtitle {
+  font-size: clamp(1.0625rem, 2vw, 1.25rem);
+  font-weight: 400;
+  line-height: 1.55;
+  color: var(--color-text-body);
+  max-width: 620px;
+  margin-bottom: 2.25rem;
+  letter-spacing: -0.01em;
+}
+
+/* Primary CTA Button */
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  padding: 0.875rem 1.75rem;
+  border-radius: var(--radius-md);
+  border: 1px solid transparent;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: none;
+  transition: all var(--transition-smooth);
+}
+
+.cta-button:hover {
+  background-color: var(--color-primary-hover);
+  transform: translateY(-1px);
+}
+
+.cta-button:active {
+  transform: translateY(0);
+}
+
+.cta-button:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+}
+
+/* ==========================================================================
+   Hero Visual: Calm Transaction Verification Animation (60fps Pure CSS/SVG)
+   ========================================================================== */
+
+.hero-visual-wrapper {
+  margin-top: 3.5rem;
+  width: 100%;
+  max-width: 640px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.reconciliation-canvas {
+  width: 100%;
+  height: 140px;
+  background-color: transparent;
+  position: relative;
+  overflow: hidden;
+  border-top: 1px solid var(--color-primary-border);
+  border-bottom: 1px solid var(--color-primary-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Parallel Stream Track Lines */
+.stream-track {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    rgba(15, 92, 77, 0) 0%,
+    rgba(15, 92, 77, 0.12) 20%,
+    rgba(15, 92, 77, 0.12) 80%,
+    rgba(15, 92, 77, 0) 100%
+  );
+}
+
+.stream-track.top {
+  top: 32px;
+}
+
+.stream-track.bottom {
+  bottom: 32px;
+}
+
+.track-label {
+  position: absolute;
+  left: 12px;
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  user-select: none;
+}
+
+.track-label.top {
+  top: 14px;
+}
+
+.track-label.bottom {
+  bottom: 14px;
+}
+
+/* Matching Zone / Alignment Center */
+.match-zone {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 120px;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.match-axis {
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(15, 92, 77, 0) 0%,
+    rgba(15, 92, 77, 0.25) 30%,
+    rgba(212, 163, 76, 0.4) 50%,
+    rgba(15, 92, 77, 0.25) 70%,
+    rgba(15, 92, 77, 0) 100%
+  );
+}
+
+.lock-badge {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+  animation: lockPulse 4.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+.lock-badge svg {
+  width: 12px;
+  height: 12px;
+  stroke: var(--color-primary);
+}
+
+/* Animated Gliding Transaction Tokens */
+.txn-stream {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+}
+
+/* Top stream (Bank records drifting rightward) */
+.txn-token {
+  position: absolute;
+  height: 26px;
+  padding: 0 10px;
+  background-color: var(--color-bg-elevated);
+  border: 1px solid var(--color-primary-border);
+  border-radius: var(--radius-sm);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  color: var(--color-text-heading);
+  white-space: nowrap;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+}
+
+.txn-token .token-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+}
+
+.txn-token.exception .token-dot {
+  background-color: var(--color-accent);
+}
+
+/* Looping animations for converging pair */
+.token-bank-1 {
+  top: 19px;
+  animation: bankGlide 6s cubic-bezier(0.2, 0.8, 0.2, 1) infinite;
+}
+
+.token-gpay-1 {
+  bottom: 19px;
+  animation: gpayGlide 6s cubic-bezier(0.2, 0.8, 0.2, 1) infinite;
+}
+
+.token-bank-2 {
+  top: 19px;
+  animation: bankGlide 6s cubic-bezier(0.2, 0.8, 0.2, 1) infinite;
+  animation-delay: -3s;
+}
+
+.token-gpay-2 {
+  bottom: 19px;
+  animation: gpayGlide 6s cubic-bezier(0.2, 0.8, 0.2, 1) infinite;
+  animation-delay: -3s;
+}
+
+
+@keyframes bankGlide {
+  0% {
+    left: -18%;
+    transform: translateY(0);
+    border-color: var(--color-primary-border);
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  42% {
+    left: 42%;
+    transform: translateY(18px); /* Glides towards center */
+    border-color: var(--color-primary);
+    background-color: #F2F8F6;
+  }
+  50% {
+    left: 50%;
+    transform: translate(-50%, 23px); /* Locks into center */
+    border-color: var(--color-primary);
+    background-color: #E8F3F0;
+    box-shadow: 0 0 0 1px var(--color-primary);
+  }
+  58% {
+    left: 58%;
+    transform: translateY(18px);
+    border-color: var(--color-primary);
+  }
+  85% {
+    opacity: 1;
+  }
+  100% {
+    left: 118%;
+    transform: translateY(0);
+    opacity: 0;
+  }
+}
+
+@keyframes gpayGlide {
+  0% {
+    left: -18%;
+    transform: translateY(0);
+    border-color: var(--color-primary-border);
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  42% {
+    left: 42%;
+    transform: translateY(-18px); /* Glides towards center */
+    border-color: var(--color-primary);
+    background-color: #F2F8F6;
+  }
+  50% {
+    left: 50%;
+    transform: translate(-50%, -23px); /* Locks into center */
+    border-color: var(--color-primary);
+    background-color: #E8F3F0;
+    box-shadow: 0 0 0 1px var(--color-primary);
+  }
+  58% {
+    left: 58%;
+    transform: translateY(-18px);
+    border-color: var(--color-primary);
+  }
+  85% {
+    opacity: 1;
+  }
+  100% {
+    left: 118%;
+    transform: translateY(0);
+    opacity: 0;
+  }
+}
+
+
+
+@keyframes lockPulse {
+  0%, 38%, 62%, 100% {
+    transform: scale(0.9);
+    border-color: var(--color-primary-border);
+    background-color: var(--color-bg);
+  }
+  48%, 52% {
+    transform: scale(1.1);
+    border-color: var(--color-accent);
+    background-color: #FFFDF9;
+    box-shadow: 0 0 12px var(--color-accent-subtle);
+  }
+}
+
+/* ==========================================================================
+   Section 2 — Product Explanation (Split 2-Column Layout from Spec)
+   ========================================================================== */
+
+.product-section {
+  padding: 8rem 2rem 7rem;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  width: 100%;
+}
+
+.split-layout {
+  display: grid;
+  grid-template-columns: 0.95fr 1.15fr;
+  gap: 4.5rem;
+  align-items: start;
+}
+
+/* Left Column: Eyebrow, Large 2-Tone Headline & Subtitle */
+.split-left {
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 4rem;
+}
+
+.section-eyebrow {
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  color: var(--color-primary);
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+.split-headline {
+  font-size: clamp(2.65rem, 4.8vw, 3.65rem);
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+  color: var(--color-text-heading);
+  margin-bottom: 1.75rem;
+}
+
+.split-headline .text-highlight {
+  color: var(--color-primary);
+}
+
+.split-subtext {
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--color-text-body);
+  max-width: 360px;
+}
+
+/* Right Column: 3 Feature Rows with Divider Lines */
+.split-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.feature-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 2.25rem 0;
+  border-top: 1px solid rgba(15, 92, 77, 0.14);
+  transition: transform var(--transition-smooth);
+}
+
+.feature-row:hover {
+  transform: translateX(4px);
+}
+
+.feature-row:last-child {
+  border-bottom: 1px solid rgba(15, 92, 77, 0.14);
+}
+
+.step-badge {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--color-accent);
+  min-width: 26px;
+  padding-top: 0.85rem;
+}
+
+.feature-icon-circle {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: rgba(15, 92, 77, 0.05);
+  border: 1px solid rgba(15, 92, 77, 0.14);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--color-primary);
+  transition: all var(--transition-smooth);
+}
+
+.feature-row:hover .feature-icon-circle {
+  background-color: rgba(15, 92, 77, 0.1);
+  border-color: var(--color-primary);
+}
+
+.feature-icon-circle svg {
+  width: 22px;
+  height: 22px;
+  stroke: var(--color-primary);
+  stroke-width: 1.75;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.feature-content {
+  flex-grow: 1;
+}
+
+.feature-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.35;
+  letter-spacing: -0.02em;
+  color: var(--color-text-heading);
+  margin-bottom: 0.5rem;
+}
+
+.feature-desc {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--color-text-body);
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+.site-footer {
+  margin-top: auto;
+  padding: 4rem 1.5rem 3.5rem;
+  border-top: 1px solid var(--color-primary-border);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-wordmark {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  color: var(--color-text-muted);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.footer-wordmark span {
+  color: var(--color-text-body);
+  font-weight: 600;
+}
+
+/* ==========================================================================
+   Interactive Upload Modal (Minimalist Dialog)
+   ========================================================================== */
+
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(26, 26, 26, 0.35);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity var(--transition-smooth), visibility var(--transition-smooth);
+}
+
+.modal-backdrop.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-dialog {
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-primary-border);
+  border-radius: var(--radius-lg);
+  max-width: 520px;
+  width: 100%;
+  padding: 2.25rem;
+  position: relative;
+  box-shadow: 0 16px 40px rgba(15, 92, 77, 0.08);
+  transform: scale(0.97) translateY(8px);
+  transition: transform var(--transition-smooth);
+}
+
+.modal-backdrop.is-open .modal-dialog {
+  transform: scale(1) translateY(0);
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-sm);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-muted);
+  transition: color var(--transition-smooth);
+}
+
+.modal-close-btn:hover {
+  color: var(--color-text-heading);
+}
+
+.modal-title {
+  font-size: 1.35rem;
+  font-weight: 550;
+  letter-spacing: -0.02em;
+  color: var(--color-text-heading);
+  margin-bottom: 0.375rem;
+}
+
+.modal-subtitle {
+  font-size: 0.875rem;
+  color: var(--color-text-body);
+  margin-bottom: 1.75rem;
+}
+
+/* Upload Dropzones */
+.dropzone-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1.75rem;
+}
+
+.dropzone {
+  border: 1px dashed var(--color-primary-border);
+  border-radius: var(--radius-md);
+  background-color: var(--color-bg-elevated);
+  padding: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+  transition: border-color var(--transition-smooth), background-color var(--transition-smooth);
+}
+
+.dropzone:hover, .dropzone.dragover {
+  border-color: var(--color-primary);
+  background-color: #F6FAF8;
+}
+
+.dropzone-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-sm);
+  background-color: var(--color-primary-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.dropzone-icon svg {
+  width: 18px;
+  height: 18px;
+  stroke: var(--color-primary);
+}
+
+.dropzone-info {
+  flex-grow: 1;
+}
+
+.dropzone-label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-text-heading);
+  margin-bottom: 0.125rem;
+}
+
+.dropzone-status {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+}
+
+.dropzone.has-file .dropzone-status {
+  color: var(--color-primary);
+  font-weight: 500;
+}
+
+.modal-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.modal-actions .cta-button {
+  width: 100%;
+}
+
+.secondary-action-btn {
+  background: transparent;
+  border: none;
+  color: var(--color-text-body);
+  font-size: 0.8125rem;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color var(--transition-smooth);
+  padding: 0.25rem;
+}
+
+.secondary-action-btn:hover {
+  color: var(--color-primary);
+}
+
+/* ==========================================================================
+   Responsive Breakpoints
+   ========================================================================== */
+
+@media (max-width: 920px) {
+  .split-layout {
+    grid-template-columns: 1fr;
+    gap: 3.5rem;
+  }
+  .split-left {
+    position: static;
+  }
+  .split-subtext {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-section {
+    padding-top: 5.5rem;
+  }
+  .hero-title {
+    font-size: 2.25rem;
+  }
+  .split-headline {
+    font-size: 2.35rem;
+  }
+  .product-section {
+    padding: 5rem 1.5rem;
+  }
+  .feature-row {
+    gap: 1.125rem;
+  }
+}
