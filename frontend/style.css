@@ -117,6 +117,7 @@ body {
   padding: 6rem 1.5rem 3rem;
   text-align: center;
   position: relative;
+  overflow: hidden;
 }
 
 .hero-container {
@@ -125,6 +126,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  z-index: 2;
 }
 
 .hero-title {
@@ -135,6 +138,8 @@ body {
   color: var(--color-text-heading);
   margin-bottom: 1.25rem;
   max-width: 780px;
+  position: relative;
+  z-index: 2;
 }
 
 .hero-subtitle {
@@ -145,6 +150,8 @@ body {
   max-width: 620px;
   margin-bottom: 2.25rem;
   letter-spacing: -0.01em;
+  position: relative;
+  z-index: 2;
 }
 
 /* Primary CTA Button */
@@ -165,6 +172,8 @@ body {
   text-decoration: none;
   box-shadow: none;
   transition: all var(--transition-smooth);
+  position: relative;
+  z-index: 2;
 }
 
 .cta-button:hover {
@@ -188,15 +197,16 @@ body {
 .hero-visual-wrapper {
   margin-top: 3.5rem;
   width: 100%;
-  max-width: 640px;
+  max-width: 660px;
   display: flex;
   justify-content: center;
   position: relative;
+  perspective: 1000px;
 }
 
 .reconciliation-canvas {
   width: 100%;
-  height: 140px;
+  height: 144px;
   background-color: transparent;
   position: relative;
   overflow: hidden;
@@ -205,6 +215,68 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* ==========================================================================
+   Dollar Bill Animated Backdrop — Seamless Left-to-Right Scrolling (Text Banner Only)
+   ========================================================================== */
+
+.dollar-bill-backdrop {
+  position: absolute;
+  top: -1.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  height: 250px;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.dollar-scroll-track {
+  display: flex;
+  width: max-content;
+  height: 100%;
+  will-change: transform;
+  animation: scrollLeftToRight 30s linear infinite;
+}
+
+.dollar-bill-item {
+  flex-shrink: 0;
+  width: 1350px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dollar-bill-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 45%;
+  opacity: 0.5; /* 50% opacity per requirement */
+  filter: contrast(1.05) saturate(1.1) brightness(1.02) grayscale(0.12);
+  user-select: none;
+  pointer-events: none;
+}
+
+/* Soft top/bottom edge fade only — no radial glass effect */
+.dollar-bill-vignette {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    to bottom,
+    rgba(251, 251, 250, 0.95) 0%,
+    rgba(251, 251, 250, 0) 15%,
+    rgba(251, 251, 250, 0) 85%,
+    rgba(251, 251, 250, 0.95) 100%
+  );
+  z-index: 2;
 }
 
 /* Parallel Stream Track Lines */
@@ -216,10 +288,11 @@ body {
   background: linear-gradient(
     90deg,
     rgba(15, 92, 77, 0) 0%,
-    rgba(15, 92, 77, 0.12) 20%,
-    rgba(15, 92, 77, 0.12) 80%,
+    rgba(15, 92, 77, 0.2) 20%,
+    rgba(15, 92, 77, 0.2) 80%,
     rgba(15, 92, 77, 0) 100%
   );
+  z-index: 4;
 }
 
 .stream-track.top {
@@ -234,11 +307,17 @@ body {
   position: absolute;
   left: 12px;
   font-size: 0.6875rem;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: var(--color-text-muted);
+  color: var(--color-primary);
+  background: rgba(248, 250, 249, 0.88);
+  backdrop-filter: blur(4px);
+  padding: 1px 7px;
+  border-radius: 4px;
+  border: 1px solid rgba(15, 92, 77, 0.12);
   user-select: none;
+  z-index: 5;
 }
 
 .track-label.top {
@@ -262,6 +341,7 @@ body {
   align-items: center;
   justify-content: center;
   pointer-events: none;
+  z-index: 6;
 }
 
 .match-axis {
@@ -305,6 +385,7 @@ body {
   left: 0;
   top: 0;
   pointer-events: none;
+  z-index: 7;
 }
 
 /* Top stream (Bank records drifting rightward) */
@@ -437,7 +518,14 @@ body {
   }
 }
 
-
+@keyframes scrollLeftToRight {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
 
 @keyframes lockPulse {
   0%, 38%, 62%, 100% {
