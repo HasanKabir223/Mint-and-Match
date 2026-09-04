@@ -29,8 +29,8 @@ __all__ = [
 ]
 
 if __name__ == "__main__":
-    bank_p = "new data/bank_statement_v2.csv" if os.path.exists("new data/bank_statement_v2.csv") else "bank_statement.csv"
-    gpay_p = "new data/gpay_history_v2.csv" if os.path.exists("new data/gpay_history_v2.csv") else "gpay_history.csv"
+    bank_p = "data/bank_statement_v3.csv" if os.path.exists("data/bank_statement_v3.csv") else "bank_statement.csv"
+    gpay_p = "data/gpay_history_v3.csv" if os.path.exists("data/gpay_history_v3.csv") else "gpay_history.csv"
     
     nb, ng = normalize_sources(bank_p, gpay_p, save_outputs=True)
     print(f"[+] Normalized {len(nb)} Bank rows & {len(ng)} GPay rows.")
