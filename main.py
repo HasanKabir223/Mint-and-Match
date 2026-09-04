@@ -1,11 +1,3 @@
-"""
-Main CLI Entry Point for Mint & Match (AI Finance Controller - Track 04)
-========================================================================
-
-Executes the multi-source reconciliation loop across bank statements and
-GPay payment histories using LangGraph and Groq exception reasoning.
-"""
-
 import argparse
 import csv
 import json
@@ -35,14 +27,14 @@ def parse_args():
     parser.add_argument(
         "--bank",
         type=str,
-        default="data v3/bank_statement_v3.csv",
-        help="Path to bank statement CSV (default: data v3/bank_statement_v3.csv)",
+        default="data/bank_statement_v3.csv",
+        help="Path to bank statement CSV (default: data/bank_statement_v3.csv)",
     )
     parser.add_argument(
         "--gpay",
         type=str,
-        default="data v3/gpay_history_v3.csv",
-        help="Path to GPay payment history CSV (default: data v3/gpay_history_v3.csv)",
+        default="data/gpay_history_v3.csv",
+        help="Path to GPay payment history CSV (default: data/gpay_history_v3.csv)",
     )
     parser.add_argument(
         "--output",
@@ -217,11 +209,11 @@ def main():
 
     bank_path = resolve_data_path(
         args.bank,
-        ["data v3/bank_statement_v3.csv", "new data/bank_statement_v2.csv", "data/bank_statement.csv", "bank_statement.csv"]
+        ["data/bank_statement_v3.csv", "new data/bank_statement_v2.csv", "data/bank_statement.csv", "bank_statement.csv"]
     )
     gpay_path = resolve_data_path(
         args.gpay,
-        ["data v3/gpay_history_v3.csv", "new data/gpay_history_v2.csv", "data/gpay_history.csv", "gpay_history.csv"]
+        ["data/gpay_history_v3.csv", "new data/gpay_history_v2.csv", "data/gpay_history.csv", "gpay_history.csv"]
     )
 
     print(f"[*] Normalizing input sources:\n    - Bank: {bank_path}\n    - GPay: {gpay_path}")

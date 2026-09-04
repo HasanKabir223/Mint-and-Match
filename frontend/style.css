@@ -82,26 +82,24 @@ body {
 }
 
 .brand-wordmark {
-  font-size: 0.9375rem;
-  font-weight: 600;
-  letter-spacing: -0.01em;
-  color: var(--color-text-heading);
-  text-decoration: none;
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
-  transition: opacity var(--transition-smooth);
+  justify-content: center;
+  text-decoration: none;
+  transition: opacity var(--transition-smooth), transform var(--transition-smooth);
 }
 
 .brand-wordmark:hover {
-  opacity: 0.8;
+  opacity: 0.85;
+  transform: translateY(-1px);
 }
 
-.brand-dot {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background-color: var(--color-primary);
+.brand-logo-img {
+  height: 38px;
+  width: auto;
+  max-width: 100%;
+  display: block;
+  object-fit: contain;
 }
 
 /* ==========================================================================
@@ -904,5 +902,8 @@ body {
   }
   .feature-row {
     gap: 1.125rem;
+  }
+  .brand-logo-img {
+    height: 30px;
   }
 }

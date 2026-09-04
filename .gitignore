@@ -1,7 +1,10 @@
 .env
 *.toml
 *.json
+!output/**
 __pycache__/
 *.py[cod]
 *$py.class
-data/
+docs/
+.venv/
+venv/

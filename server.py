@@ -34,8 +34,8 @@ async def reconcile(
 ):
     # Determine input files
     if use_sample.lower() == "true" or not bank_file or not gpay_file:
-        bank_path = "data v3/bank_statement_v3.csv"
-        gpay_path = "data v3/gpay_history_v3.csv"
+        bank_path = "data/bank_statement_v3.csv"
+        gpay_path = "data/gpay_history_v3.csv"
     else:
         # Save uploaded files temporarily to disk
         temp_dir = tempfile.mkdtemp()
