@@ -62,6 +62,35 @@ Tested against synthetic production-style data with known ground truth (`data/ba
 
 All 23 unresolved exceptions are exported to `output/reconciliation_report.json` and `output/reconciliation_report.csv` with specific failure causes, such as cash/cheque deposits lacking UPI counterparts, internal bank interest credits, or ambiguous multi-candidate transactions sharing identical amounts on the same date.
 
+## How to Run
+
+### 1. Install Dependencies
+Ensure you have Python 3.10 installed, then install all project dependencies:
+
+```bash
+py -3.10 -m pip install -r requirements.txt
+```
+
+### 2. Configure Environment
+Create a `.env` file in the project root with your Groq API key:
+
+```env
+GROQ_API_KEY=your_groq_api_key_here
+```
+
+### 3. Start the Server & Web App
+
+```bash
+py -3.10 server.py
+```
+
+Open **`http://127.0.0.1:8000/`** in your browser:
+1. Click **Upload your statements**.
+2. Select your CSVs, or click **Or load sample test batch (v3 dataset)** to test instantly with the pre-loaded data.
+3. Click **Run Reconciliation** to inspect matched records, throughput metrics, and download the full reconciliation CSV report.
+
+*(Alternatively, run headlessly via terminal with `py -3.10 main.py`)*
+
 ## Conclusion
 
 Mint & Match is built on the principle that an autonomous finance agent must be honest about its limits by design. By pairing deterministic rule-based verification with AI-driven exception explanations, it delivers a transparent reconciliation pipeline that finance teams can defend without ever debugging an AI hallucination.
