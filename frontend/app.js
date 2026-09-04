@@ -111,7 +111,7 @@ document.addEventListener('DOMContentLoaded', () => {
     gpayStatus.textContent = 'gpay_history_v3.csv (103 records loaded)';
     gpayDropzone.classList.add('has-file');
 
-    loadSampleBtn.textContent = '✓ Sample batch ready to reconcile';
+    loadSampleBtn.textContent = 'Sample batch ready to reconcile';
     loadSampleBtn.style.color = '#0F5C4D';
   });
 
@@ -200,32 +200,37 @@ document.addEventListener('DOMContentLoaded', () => {
       resultsDiv.innerHTML = `
         <div style="font-weight: 600; margin-bottom: 0.75rem; color: #0F5C4D; display: flex; justify-content: space-between; align-items: center;">
           <span>Reconciliation Summary</span>
-          <span style="font-size: 0.75rem; background: #0F5C4D; color: #FAF9F6; padding: 2px 8px; border-radius: 4px;">Verified</span>
+          <span style="font-size: 0.75rem; background: #0F5C4D; color: #FAF9F6; padding: 2px 8px; border-radius: 4px; font-weight: 500;">Verified</span>
         </div>
         
-        <div style="display: flex; flex-direction: column; gap: 7px; margin-bottom: 12px;">
+        <div style="display: flex; flex-direction: column; gap: 8px; margin-bottom: 12px;">
           <div style="display: flex; justify-content: space-between;">
-            <span>🎯 <strong>Tier 1 Matches (Exact ID):</strong></span>
+            <span>Tier 1 Matches (Exact ID):</span>
             <span style="font-weight: 600; color: #0F5C4D;">${stats.tier1_exact_matches || 0}</span>
           </div>
           <div style="display: flex; justify-content: space-between;">
-            <span>🔍 <strong>Tier 2 Matches (Amount + Date):</strong></span>
+            <span>Tier 2 Matches (Amount + Date):</span>
             <span style="font-weight: 600; color: #0F5C4D;">${stats.tier2_fuzzy_matches || 0}</span>
           </div>
           <div style="display: flex; justify-content: space-between;">
-            <span>⚠️ <strong>Tier 3 Exceptions (Unresolved):</strong></span>
+            <span>Tier 3 Exceptions (Unresolved):</span>
             <span style="font-weight: 600; color: #C05621;">${stats.unresolved_exceptions || 0}</span>
           </div>
-          <div style="margin-top: 6px; padding-top: 6px; border-top: 1px dashed rgba(15,92,77,0.2); display: flex; justify-content: space-between;">
-            <span>📊 <strong>Overall Match Rate:</strong></span>
+          <div style="margin-top: 6px; padding-top: 8px; border-top: 1px dashed rgba(15,92,77,0.2); display: flex; justify-content: space-between;">
+            <span style="font-weight: 600;">Overall Match Rate:</span>
             <span style="font-weight: 700; color: #0F5C4D;">${stats.match_rate_percent || 0}% (${stats.total_confirmed_matches || 0}/${stats.total_bank_records || 0})</span>
           </div>
         </div>
 
         <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(15,92,77,0.12); padding-top: 10px; margin-top: 8px;">
-          <span style="font-size: 0.75rem; color: #5A5A5A;">⚡ ${stats.throughput_records_per_second || 0} rec/s (${stats.processing_time_seconds || 0}s)</span>
-          <a href="/api/download-report" download="reconciliation_report.csv" style="display: inline-flex; align-items: center; gap: 6px; background: #0F5C4D; color: #fff; padding: 6px 12px; border-radius: 6px; text-decoration: none; font-size: 0.8125rem; font-weight: 500; transition: background 0.2s;">
-            📥 Download Report CSV
+          <span style="font-size: 0.75rem; color: #5A5A5A;">${stats.throughput_records_per_second || 0} rec/s (${stats.processing_time_seconds || 0}s)</span>
+          <a href="/api/download-report" download="reconciliation_report.csv" style="display: inline-flex; align-items: center; gap: 6px; background: #0F5C4D; color: #fff; padding: 6px 14px; border-radius: 6px; text-decoration: none; font-size: 0.8125rem; font-weight: 500; transition: background 0.2s;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            <span>Download Report CSV</span>
           </a>
         </div>
       `;
